@@ -2,7 +2,8 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { Star, Phone, MapPin } from "lucide-react"
+import { Phone, MapPin } from "lucide-react"
+import Script from "next/script"
 
 export function ReviewsSection() {
   return (
@@ -10,7 +11,7 @@ export function ReviewsSection() {
       {/* Google Reviews Widget Section - Direct Embed */}
       <div className="mb-16">
         <div className='sk-ww-google-reviews' data-embed-id='25594563'></div>
-        <script src='https://widgets.sociablekit.com/google-reviews/widget.js' defer></script>
+        <Script src='https://widgets.sociablekit.com/google-reviews/widget.js' strategy="lazyOnload" />
       </div>
 
       {/* Call to Action - Bottom Center */}
