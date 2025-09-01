@@ -4,6 +4,7 @@ import { GalleryGrid } from "@/components/gallery-grid"
 import { BeforeAfterSection } from "@/components/before-after-section"
 import { GalleryCategories } from "@/components/gallery-categories"
 import { Footer } from "@/components/footer"
+import { WaveSplitter, DoubleLineSplitter } from "@/components/section-splitters"
 
 export default function GalleryPage() {
   return (
@@ -12,6 +13,7 @@ export default function GalleryPage() {
       <GalleryHero />
       <GalleryCategories />
       <GalleryGrid />
+      <WaveSplitter />
       <BeforeAfterSection />
       <Footer />
     </main>

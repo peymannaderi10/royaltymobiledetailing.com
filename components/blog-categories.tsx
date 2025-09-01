@@ -1,12 +1,14 @@
 "use client"
 
-import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Car, Sun, Scissors, Wrench, Lightbulb, Grid3X3 } from "lucide-react"
 
-export function BlogCategories() {
-  const [activeCategory, setActiveCategory] = useState("all")
+type BlogCategoriesProps = {
+  activeCategory: string
+  onChange: (categoryId: string) => void
+}
 
+export function BlogCategories({ activeCategory, onChange }: BlogCategoriesProps) {
   const categories = [
     { id: "all", name: "All Articles", icon: Grid3X3 },
     { id: "maintenance", name: "Maintenance Tips", icon: Wrench },
@@ -17,7 +19,7 @@ export function BlogCategories() {
   ]
 
   return (
-    <section className="py-12 bg-background border-b border-border">
+    <section className="py-12 bg-white">
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex flex-wrap justify-center gap-3">
           {categories.map((category) => (
@@ -25,7 +27,7 @@ export function BlogCategories() {
               key={category.id}
               variant={activeCategory === category.id ? "default" : "outline"}
               size="sm"
-              onClick={() => setActiveCategory(category.id)}
+              onClick={() => onChange(category.id)}
               className={
                 activeCategory === category.id
                   ? "bg-accent hover:bg-accent/90 text-accent-foreground"

@@ -10,7 +10,7 @@ export default function ContactPage() {
     <main className="min-h-screen">
       <Navigation />
       <ContactHero />
-      <section className="py-8 bg-background">
+      <section className="py-8 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-0 min-h-[600px]">
             <LocationMap />

@@ -91,7 +91,7 @@ export function ServicesGrid() {
   ]
 
   return (
-    <section className="py-20 bg-background">
+    <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-primary mb-4 font-[family-name:var(--font-heading)]">

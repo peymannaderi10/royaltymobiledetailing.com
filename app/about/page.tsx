@@ -5,6 +5,7 @@ import { TeamSection } from "@/components/team-section"
 import { AboutValues } from "@/components/about-values"
 import { AboutStats } from "@/components/about-stats"
 import { Footer } from "@/components/footer"
+import { DotsSplitter, GeometricSplitter, WaveSplitter, DoubleLineSplitter } from "@/components/section-splitters"
 
 export default function AboutPage() {
   return (
@@ -12,8 +13,11 @@ export default function AboutPage() {
       <Navigation />
       <AboutHero />
       <AboutStory />
+      <DotsSplitter />
       <AboutStats />
+      <GeometricSplitter />
       <AboutValues />
+      <WaveSplitter />
       <TeamSection />
       <Footer />
     </main>

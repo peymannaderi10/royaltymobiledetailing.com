@@ -2,7 +2,7 @@ import { Card, CardContent } from "@/components/ui/card"
 
 export function AboutStory() {
   return (
-    <section className="py-20 bg-background">
+    <section className="py-20 bg-white">
       <div className="max-w-4xl mx-auto px-6">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>

@@ -4,7 +4,7 @@ import { Phone } from "lucide-react"
 
 export function TeamSection() {
   return (
-    <section className="py-20 bg-muted/30">
+    <section className="py-20 bg-white">
       <div className="max-w-4xl mx-auto px-6 text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6 font-[family-name:var(--font-heading)]">
           Meet Our Team

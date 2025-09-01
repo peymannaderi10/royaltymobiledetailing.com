@@ -6,7 +6,7 @@ import { Star, Phone, MapPin } from "lucide-react"
 
 export function ReviewsSection() {
   return (
-    <section className="py-16 bg-background">
+    <section className="py-16 bg-white">
       <div className="max-w-4xl mx-auto px-6">
         {/* Google Reviews Widget Section - Centered */}
         <div className="mb-16">

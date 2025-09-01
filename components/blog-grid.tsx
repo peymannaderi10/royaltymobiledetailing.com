@@ -5,7 +5,11 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Calendar, Clock, User } from "lucide-react"
 
-export function BlogGrid() {
+export interface BlogGridProps {
+  filterCategories?: string[]
+}
+
+export function BlogGrid({ filterCategories = [] }: BlogGridProps) {
   const articles = [
     {
       title: "5 Signs Your Convertible Top Needs Replacement",
@@ -97,11 +101,15 @@ export function BlogGrid() {
     },
   ]
 
-  const featuredArticle = articles.find((article) => article.featured)
-  const regularArticles = articles.filter((article) => !article.featured)
+  const filtered = filterCategories.length
+    ? articles.filter((a) => filterCategories.includes(a.category))
+    : articles
+
+  const featuredArticle = filtered.find((article) => article.featured)
+  const regularArticles = filtered.filter((article) => !article.featured)
 
   return (
-    <section className="py-20 bg-background">
+    <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-6">
         {/* Featured Article */}
         {featuredArticle && (
@@ -184,17 +192,6 @@ export function BlogGrid() {
               </Card>
             ))}
           </div>
-        </div>
-
-        {/* Load More Button */}
-        <div className="text-center mt-12">
-          <Button
-            variant="outline"
-            size="lg"
-            className="border-primary text-primary hover:bg-primary hover:text-primary-foreground bg-transparent"
-          >
-            Load More Articles
-          </Button>
         </div>
       </div>
     </section>

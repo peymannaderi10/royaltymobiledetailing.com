@@ -21,7 +21,7 @@ export function BlogNewsletter() {
   }
 
   return (
-    <section className="py-20 bg-muted/30">
+    <section className="py-20 bg-white">
       <div className="max-w-4xl mx-auto px-6">
         <Card className="border-none bg-background/80 backdrop-blur-sm">
           <CardContent className="p-12 text-center">

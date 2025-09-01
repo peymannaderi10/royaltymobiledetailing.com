@@ -3,6 +3,7 @@ import { ServicesHero } from "@/components/services-hero"
 import { ServicesGrid } from "@/components/services-grid"
 import { ServiceProcess } from "@/components/service-process"
 import { Footer } from "@/components/footer"
+import { AccentDotSplitter, LineSplitter } from "@/components/section-splitters"
 
 export default function ServicesPage() {
   return (
@@ -10,6 +11,7 @@ export default function ServicesPage() {
       <Navigation />
       <ServicesHero />
       <ServicesGrid />
+      <AccentDotSplitter />
       <ServiceProcess />
       <Footer />
     </main>

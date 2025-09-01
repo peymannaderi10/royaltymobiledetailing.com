@@ -17,7 +17,7 @@ export function GalleryCategories() {
   ]
 
   return (
-    <section className="py-12 bg-background border-b border-border">
+    <section className="py-12 bg-white border-b border-border">
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex flex-wrap justify-center gap-3">
           {categories.map((category) => (
