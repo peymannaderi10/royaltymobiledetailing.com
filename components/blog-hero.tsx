@@ -1,6 +1,6 @@
 export function BlogHero() {
   return (
-    <section className="relative pt-24 pb-16 bg-gradient-to-br from-primary/10 to-accent/10">
+    <section className="relative pt-36 pb-24 bg-gradient-to-br from-primary/10 to-accent/10">
       <div className="max-w-4xl mx-auto px-6 text-center">
         <h1 className="text-4xl md:text-6xl font-bold text-primary mb-6 font-[family-name:var(--font-heading)]">
           Auto Care Blog

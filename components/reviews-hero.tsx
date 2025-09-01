@@ -2,7 +2,7 @@ import { Star } from "lucide-react"
 
 export function ReviewsHero() {
   return (
-    <section className="relative pt-24 pb-16 bg-gradient-to-br from-primary/10 to-accent/10">
+    <section className="relative pt-36 pb-24 bg-gradient-to-br from-primary/10 to-accent/10">
       <div className="max-w-4xl mx-auto px-6 text-center">
         <div className="mb-6 flex items-center justify-center gap-2">
           <div className="flex">
