@@ -10,9 +10,8 @@ export default function GalleryPage() {
     <main className="min-h-screen">
       <Navigation />
       <GalleryHero />
-      <GalleryGrid />
-      <WaveSplitter />
       <BeforeAfterSection />
+      <GalleryGrid />
       <Footer />
     </main>
   )
