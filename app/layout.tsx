@@ -36,6 +36,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`font-sans ${workSans.variable} ${openSans.variable}`}
+        suppressHydrationWarning
       >
         <Suspense fallback={<div>Loading...</div>}>{children}</Suspense>
         <Analytics />
