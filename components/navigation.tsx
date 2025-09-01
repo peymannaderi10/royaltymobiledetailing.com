@@ -23,7 +23,7 @@ export function Navigation() {
          { label: "Our Story", href: "/about", ariaLabel: "About Our Company" },
          { label: "Gallery", href: "/gallery", ariaLabel: "Work Gallery" },
          { label: "Blog", href: "/blog", ariaLabel: "Our Blog" },
-         { label: "Reviews", href: "/about", ariaLabel: "Customer Reviews" }
+         { label: "Reviews", href: "/reviews", ariaLabel: "Customer Reviews" }
        ]
      },
          {
