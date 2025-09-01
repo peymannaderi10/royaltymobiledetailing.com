@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button"
-import { Phone, Calendar, Star } from "lucide-react"
+import { Phone, Star } from "lucide-react"
 
 export function ContactHero() {
   return (
@@ -21,11 +21,7 @@ export function ContactHero() {
           Ready to restore your vehicle's interior? Get in touch for a free consultation and estimate on your auto
           interior or sunroof needs
         </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground">
-            <Calendar className="w-5 h-5 mr-2" />
-            Schedule Service
-          </Button>
+        <div className="flex justify-center">
           <Button
             variant="outline"
             size="lg"

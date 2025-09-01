@@ -33,7 +33,7 @@ export function HeroSection() {
             Steve's Auto
           </h1>
           <RotatingText
-            texts={['Interiors', 'Sunroofs', 'Convertibles', 'Maintenance', 'Repairs', 'Restoration']}
+            texts={['Restoration','Interiors', 'Sunroofs', 'Convertibles', 'Maintenance']}
             mainClassName="text-5xl md:text-7xl font-bold text-accent overflow-hidden py-1 justify-center"
             staggerFrom="last"
             initial={{ y: "100%" }}
