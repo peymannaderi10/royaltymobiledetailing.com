@@ -12,7 +12,7 @@ export function RecentWork() {
     },
     {
       title: "Mercedes Sunroof Restoration",
-      description: "Fixed persistent leak and replaced motor mechanism",
+      description: "Fixed persistent leak and replaced motor mechanism, including new motor and regulator",
       image: "/mercedes-sunroof-repair-before-and-after.png",
     },
     {
