@@ -38,19 +38,36 @@ export function RecentWork() {
           {projects.map((project, index) => (
             <Card
               key={index}
-              className="group overflow-hidden border-border/50 hover:shadow-lg transition-all duration-300"
+              className="group relative overflow-hidden border-border/50 hover:shadow-xl transition-all duration-300 aspect-[4/3] cursor-pointer"
+              style={{
+                backgroundImage: `url(${project.image || "/placeholder.svg"})`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center'
+              }}
             >
-              <div className="aspect-[4/3] overflow-hidden">
-                <img
-                  src={project.image || "/placeholder.svg"}
-                  alt={project.title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                />
-              </div>
-              <CardContent className="p-6">
-                <h3 className="text-lg font-semibold text-primary mb-2">{project.title}</h3>
-                <p className="text-muted-foreground text-sm">{project.description}</p>
+              {/* Dark overlay with opacity */}
+              <div className="absolute inset-0 bg-black/40 group-hover:bg-black/30 transition-all duration-300" />
+              
+              {/* Text overlay */}
+              <CardContent className="relative h-full flex flex-col justify-end p-6 z-10">
+                <h3 className="text-xl font-bold text-white mb-2 drop-shadow-lg">
+                  {project.title}
+                </h3>
+                <p className="text-white/90 text-sm leading-relaxed drop-shadow-md">
+                  {project.description}
+                </p>
               </CardContent>
+
+              {/* Hover effect - scale image */}
+              <div 
+                className="absolute inset-0 transition-transform duration-300 group-hover:scale-105"
+                style={{
+                  backgroundImage: `url(${project.image || "/placeholder.svg"})`,
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center',
+                  zIndex: -1
+                }}
+              />
             </Card>
           ))}
         </div>
