@@ -1,4 +1,5 @@
 import { Phone, MapPin, Clock, Star } from "lucide-react"
+import Link from "next/link"
 
 export function Footer() {
   return (
@@ -27,12 +28,36 @@ export function Footer() {
           <div>
             <h4 className="text-lg font-semibold mb-4 font-[family-name:var(--font-heading)]">Services</h4>
             <ul className="space-y-2 text-primary-foreground/80 font-[family-name:var(--font-body)]">
-              <li>Convertible Tops</li>
-              <li>Sunroof/Moonroof Repair</li>
-              <li>Headliner Replacement</li>
-              <li>Interior Restoration</li>
-              <li>Custom Seat Covers</li>
-              <li>Maintenance Services</li>
+              <li>
+                <Link href="/services" className="hover:text-accent transition-colors">
+                  Convertible Tops
+                </Link>
+              </li>
+              <li>
+                <Link href="/services" className="hover:text-accent transition-colors">
+                  Sunroof/Moonroof Repair
+                </Link>
+              </li>
+              <li>
+                <Link href="/services" className="hover:text-accent transition-colors">
+                  Headliner Replacement
+                </Link>
+              </li>
+              <li>
+                <Link href="/services" className="hover:text-accent transition-colors">
+                  Interior Restoration
+                </Link>
+              </li>
+              <li>
+                <Link href="/services" className="hover:text-accent transition-colors">
+                  Custom Seat Covers
+                </Link>
+              </li>
+              <li>
+                <Link href="/services" className="hover:text-accent transition-colors">
+                  Maintenance Services
+                </Link>
+              </li>
             </ul>
           </div>
 
