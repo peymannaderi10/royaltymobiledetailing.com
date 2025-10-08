@@ -31,10 +31,10 @@ const stats = [
 const values = [
   "Expert craftsmanship with attention to detail",
   "Honest, transparent pricing and communication",
-  "Problem-solving approach to complex repairs",
+  "Mobile service convenience to your location",
   "Small team, personalized service",
-  "Quality materials and OEM-grade replacements",
-  "Comprehensive multi-point inspections",
+  "Premium products and professional techniques",
+  "Comprehensive vehicle appearance restoration",
 ]
 
 export function AboutSection() {
@@ -45,16 +45,16 @@ export function AboutSection() {
           {/* Content */}
           <div>
             <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6 font-[family-name:var(--font-heading)]">
-              About Steve's Auto Interior & Sunroofs
+              About Royalty Mobile Detailing
             </h2>
             <p className="text-lg text-muted-foreground mb-6 font-[family-name:var(--font-body)] leading-relaxed">
-              Founded in 2003, Steve's Auto Interior & Sunroofs has been the trusted choice for automotive interior
-              restoration and sunroof services in Beverly and Edgewater Park, New Jersey. Our small, expert team focuses
+              Founded in 2003, Royalty Mobile Detailing has been the trusted choice for premium mobile auto detailing
+              and ceramic coating services in Beverly and Edgewater Park, New Jersey. Our small, expert team focuses
               on quality craftsmanship and problem-solving approach to every project.
             </p>
             <p className="text-lg text-muted-foreground mb-8 font-[family-name:var(--font-body)] leading-relaxed">
-              We specialize in the repairs that others can't handle - from complex sunroof leaks that have stumped other
-              shops to complete convertible top restorations. Our commitment to excellence has earned us a 4.8-star
+              We specialize in premium detailing services that others can't handle - from complex paint correction that has stumped other
+              shops to complete ceramic coating applications. Our commitment to excellence has earned us a 4.8-star
               rating and the trust of customers throughout South Jersey.
             </p>
 

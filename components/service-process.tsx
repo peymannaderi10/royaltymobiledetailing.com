@@ -66,10 +66,10 @@ export function ServiceProcess() {
               Contact us today for a free consultation and estimate on your auto interior or sunroof needs
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="tel:6098801919" className="inline-block">
+              <a href="tel:2675041533" className="inline-block">
                 <button className="bg-accent hover:bg-accent/90 text-accent-foreground px-6 py-3 rounded-md font-semibold flex items-center gap-2">
                   <Phone className="w-4 h-4" />
-                  Call (609) 880-1919
+                  Call (267) 504-1533
                 </button>
               </a>
               <button className="border border-primary text-primary hover:bg-primary hover:text-primary-foreground px-6 py-3 rounded-md font-semibold bg-transparent">

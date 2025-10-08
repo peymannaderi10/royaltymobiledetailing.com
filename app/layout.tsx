@@ -21,15 +21,15 @@ const openSans = Open_Sans({
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://stevesautointerior.com"),
-  title: "Steve's Auto Interior & Sunroofs | Beverly, NJ Expert",
+  metadataBase: new URL("https://royaltymobiledetailing.com"),
+  title: "Royalty Mobile Detailing | Premium Auto Detailing Service",
   description:
-    "Expert auto interior restoration, convertible tops & sunroof repair in Beverly, NJ. 20+ years experience, 4.8-star rating. Professional auto upholstery services.",
+    "Professional mobile auto detailing service. Premium interior and exterior car detailing, ceramic coating, paint correction. Mobile service available.",
   keywords:
-    "auto upholstery NJ, sunroof repair NJ, convertible top replacement, auto interior restoration, Beverly NJ, Edgewater Park NJ",
-  authors: [{ name: "Steve's Auto Interior" }],
-  creator: "Steve's Auto Interior",
-  publisher: "Steve's Auto Interior",
+    "mobile auto detailing, car detailing service, ceramic coating, paint correction, interior cleaning, exterior detailing, mobile car wash",
+  authors: [{ name: "Royalty Mobile Detailing" }],
+  creator: "Royalty Mobile Detailing",
+  publisher: "Royalty Mobile Detailing",
   robots: {
     index: true,
     follow: true,
@@ -44,29 +44,29 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://stevesautointerior.com",
-    siteName: "Steve's Auto Interior & Sunroofs",
-    title: "Steve's Auto Interior & Sunroofs | Beverly, NJ Expert",
+    url: "https://royaltymobiledetailing.com",
+    siteName: "Royalty Mobile Detailing",
+    title: "Royalty Mobile Detailing | Premium Auto Detailing Service",
     description:
-      "Expert auto interior restoration, convertible tops & sunroof repair in Beverly, NJ. 20+ years experience, 4.8-star rating. Professional auto upholstery services.",
+      "Professional mobile auto detailing service. Premium interior and exterior car detailing, ceramic coating, paint correction. Mobile service available.",
     images: [
       {
         url: "/Steve'sLogo.png",
         width: 1200,
         height: 630,
-        alt: "Steve's Auto Interior & Sunroofs Logo",
+        alt: "Royalty Mobile Detailing Logo",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Steve's Auto Interior & Sunroofs | Beverly, NJ Expert",
+    title: "Royalty Mobile Detailing | Premium Auto Detailing Service",
     description:
-      "Expert auto interior restoration, convertible tops & sunroof repair in Beverly, NJ. 20+ years experience, 4.8-star rating.",
+      "Professional mobile auto detailing service. Premium interior and exterior car detailing, ceramic coating, paint correction. Mobile service available.",
     images: ["/Steve'sLogo.png"],
   },
   alternates: {
-    canonical: "https://stevesautointerior.com",
+    canonical: "https://royaltymobiledetailing.com",
   },
   verification: {
     google: "google-site-verification-code", // Replace with actual verification code
@@ -81,9 +81,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="canonical" href="https://stevesautointerior.com" />
-        <meta name="geo.region" content="US-NJ" />
-        <meta name="geo.placename" content="Beverly, New Jersey" />
+        <link rel="canonical" href="https://royaltymobiledetailing.com" />
+        <meta name="geo.region" content="US" />
+        <meta name="geo.placename" content="Mobile Service Area" />
         <meta name="geo.position" content="40.0642;-74.9207" />
         <meta name="ICBM" content="40.0642, -74.9207" />
       </head>

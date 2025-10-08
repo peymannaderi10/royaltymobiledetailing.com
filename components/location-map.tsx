@@ -11,7 +11,7 @@ export function LocationMap() {
             allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            title="Steve's Auto Interior & Sunroofs Location"
+            title="Royalty Mobile Detailing Location"
           />
         </div>
       </div>

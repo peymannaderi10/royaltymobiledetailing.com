@@ -11,7 +11,7 @@ export function ContactFAQ() {
     {
       question: "How do I schedule an appointment?",
       answer:
-        "You can call us at (609) 880-1919, fill out our online contact form, or stop by our shop during business hours. We'll provide a free consultation and estimate for your project.",
+        "You can call us at (267) 504-1533, fill out our online contact form, or stop by our shop during business hours. We'll provide a free consultation and estimate for your project.",
     },
     {
       question: "Do you provide free estimates?",
@@ -88,9 +88,9 @@ export function ContactFAQ() {
               Our friendly team is here to help with any questions about your auto interior or sunroof needs
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="tel:6098801919" className="inline-block">
+              <a href="tel:2675041533" className="inline-block">
                 <button className="bg-accent hover:bg-accent/90 text-accent-foreground px-6 py-3 rounded-md font-semibold">
-                  Call (609) 880-1919
+                  Call (267) 504-1533
                 </button>
               </a>
               <button className="border border-primary text-primary hover:bg-primary hover:text-primary-foreground px-6 py-3 rounded-md font-semibold bg-transparent">

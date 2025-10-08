@@ -7,9 +7,9 @@ export function ContactInfo() {
     {
       icon: Phone,
       title: "Phone",
-      info: "(609) 880-1919",
+      info: "(267) 504-1533",
       description: "Call for immediate assistance",
-      action: "tel:6098801919",
+      action: "tel:2675041533",
     },
     {
       icon: MapPin,

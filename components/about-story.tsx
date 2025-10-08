@@ -11,13 +11,13 @@ export function AboutStory() {
             </h2>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                Founded in 2003, Steve's Auto Interior & Sunroofs began as a small, family-owned business with a simple
+                Founded in 2003, Royalty Mobile Detailing began as a small, family-owned business with a simple
                 mission: to provide exceptional auto interior services with unmatched attention to detail and customer
                 care.
               </p>
               <p>
                 What started as a passion for automotive craftsmanship has grown into New Jersey's trusted destination
-                for convertible top replacement, sunroof repair, and complete interior restoration. Our small but expert
+                for premium mobile detailing, ceramic coating, and complete paint correction services. Our small but expert
                 team takes pride in solving complex problems that other shops can't handle.
               </p>
               <p>
@@ -33,7 +33,7 @@ export function AboutStory() {
               <CardContent className="p-6">
                 <h3 className="text-xl font-semibold text-primary mb-3">Our Mission</h3>
                 <p className="text-muted-foreground">
-                  To restore and enhance vehicle interiors with expert craftsmanship, using quality materials and proven
+                  To restore and enhance vehicle appearance with expert craftsmanship, using quality materials and proven
                   techniques that stand the test of time.
                 </p>
               </CardContent>

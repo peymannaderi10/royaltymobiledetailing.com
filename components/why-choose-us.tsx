@@ -40,7 +40,7 @@ export function WhyChooseUs() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-primary mb-4 font-[family-name:var(--font-heading)]">
-            Why Choose Steve's Auto Interior?
+            Why Choose Royalty Mobile Detailing?
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Two decades of expertise, quality craftsmanship, and unwavering commitment to customer satisfaction

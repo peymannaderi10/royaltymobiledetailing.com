@@ -35,7 +35,7 @@ const CardNav: React.FC<CardNavProps> = ({
   items,
   className = '',
   ease = 'power3.out',
-  baseColor = '#fff',
+  baseColor = '#FAFAFA',
   menuColor,
   buttonBgColor,
   buttonTextColor
@@ -172,7 +172,7 @@ const CardNav: React.FC<CardNavProps> = ({
             role="button"
             aria-label={isExpanded ? 'Close menu' : 'Open menu'}
             tabIndex={0}
-            style={{ color: menuColor || '#000' }}
+            style={{ color: menuColor || '#1C1C1C' }}
           >
             <div
               className={`hamburger-line w-[30px] h-[2px] bg-current transition-[transform,opacity,margin] duration-300 ease-linear [transform-origin:50%_50%] ${
@@ -193,7 +193,7 @@ const CardNav: React.FC<CardNavProps> = ({
           </div>
 
                     <a
-            href="tel:6098801919"
+            href="tel:2675041533"
             className="card-nav-cta-button hidden md:inline-flex border-0 rounded-[calc(0.75rem-0.2rem)] px-4 h-full font-medium cursor-pointer transition-colors duration-300 items-center justify-center no-underline"
             style={{ backgroundColor: buttonBgColor, color: buttonTextColor }}
           >

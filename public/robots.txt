@@ -18,4 +18,4 @@ Allow: /*.svg
 Crawl-delay: 1
 
 # Sitemap location
-Sitemap: https://stevesautointerior.com/sitemap.xml 
+Sitemap: https://royaltymobiledetailing.com/sitemap.xml 

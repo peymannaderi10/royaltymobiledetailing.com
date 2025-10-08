@@ -1,0 +1,20 @@
+The meta description is 161 characters long, which is too long.
+Expert auto interior restoration, convertible tops & sunroof repair in Beverly, NJ. 20+ years experience, 4.8-star rating. Professional auto upholstery services.
+Write a meta description for your page. Use your target keywords (in a natural way) and write with human readers in mind. Summarize the content - describe the topics your article discusses.
+
+The description should stimulate reader interest and get them to click on the article. Think of it as a mini-advertisement for your content.
+
+Too few internal links on the page.
+Internal: 8
+
+External: 0
+
+Add links to external resources that are useful for your readers. Make sure you link to high-quality sites - Google penalizes pages that link to "spammy" sites (ones that break the Google webmaster guidelines).
+
+Ideally, the links should be highly relevant to the subject you're writing about. It's impossible to cover every aspect of a subject on a single page, but your readers may be fascinated by some detail you barely touch on. If you link to a resource where they can learn more, they'll be grateful. What's more, you'll be rewarded with higher rankings!
+
+Advanced SEO
+The www and non-www versions of the URL are not redirected to the same site.
+Decide whether you want your site's URLs to include a "www", or if you prefer a plain domain name. There are marketing pros and cons for each choice, but neither one is better or worse for SEO purposes - as long as you're consistent.
+
+You should use HTTP redirections (301 permanant redirects) to pass PageRank from the "wrong" URLs to the standard (canonical) ones. That way, your content will still benefit from backlinks if someone makes a mistake and uses the wrong URL.

@@ -127,7 +127,7 @@ export default function BeforeAfterCarousel({
           return (
             <motion.div
               key={index}
-              className="relative shrink-0 flex flex-col bg-white border border-[#222] rounded-[12px] overflow-hidden cursor-grab active:cursor-grabbing"
+              className="relative shrink-0 flex flex-col bg-white border border-[#1C1C1C] rounded-[12px] overflow-hidden cursor-grab active:cursor-grabbing"
               style={{
                 width: itemWidth,
                 height: '100%',
@@ -145,7 +145,7 @@ export default function BeforeAfterCarousel({
                     alt={`${item.title} - Before`}
                     className="w-full h-full object-cover"
                   />
-                  <div className="absolute top-4 left-4 bg-red-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                  <div className="absolute top-4 left-4 bg-accent text-accent-foreground px-3 py-1 rounded-full text-sm font-semibold">
                     Before
                   </div>
                 </div>
@@ -157,7 +157,7 @@ export default function BeforeAfterCarousel({
                     alt={`${item.title} - After`}
                     className="w-full h-full object-cover"
                   />
-                  <div className="absolute top-4 left-4 bg-green-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                  <div className="absolute top-4 left-4 bg-primary text-primary-foreground px-3 py-1 rounded-full text-sm font-semibold">
                     After
                   </div>
                 </div>
@@ -181,8 +181,8 @@ export default function BeforeAfterCarousel({
               key={index}
               className={`h-2 w-2 rounded-full cursor-pointer transition-colors duration-150 ${
                 currentIndex % items.length === index
-                  ? 'bg-[#333333]'
-                  : 'bg-[rgba(51,51,51,0.4)]'
+                  ? 'bg-[#0B3D91]'
+                  : 'bg-[rgba(11,61,145,0.4)]'
               }`}
               animate={{
                 scale: currentIndex % items.length === index ? 1.2 : 1

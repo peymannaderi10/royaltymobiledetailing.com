@@ -6,19 +6,19 @@ export function Navigation() {
   const items = [
          {
        label: "Services",
-       bgColor: "#dc2626",
-       textColor: "#fff",
+       bgColor: "#0B3D91",
+       textColor: "#FAFAFA",
       links: [
-        { label: "Auto Interiors", href: "/services", ariaLabel: "Auto Interior Services" },
-        { label: "Sunroofs", href: "/services", ariaLabel: "Sunroof Repair Services" },
-        { label: "Convertible Tops", href: "/services", ariaLabel: "Convertible Top Services" },
-        { label: "Maintenance", href: "/services", ariaLabel: "Auto Maintenance Services" }
+        { label: "Full Detail", href: "/services", ariaLabel: "Full Auto Detailing Services" },
+        { label: "Interior", href: "/services", ariaLabel: "Interior Detailing Services" },
+        { label: "Exterior", href: "/services", ariaLabel: "Exterior Detailing Services" },
+        { label: "Ceramic Coating", href: "/services", ariaLabel: "Ceramic Coating Services" }
       ]
     },
          {
-       label: "About", 
-       bgColor: "#0D0716",
-       textColor: "#fff",
+       label: "About",
+       bgColor: "#D4AF37",
+       textColor: "#1C1C1C",
        links: [
          { label: "Our Story", href: "/about", ariaLabel: "About Our Company" },
          { label: "Gallery", href: "/gallery", ariaLabel: "Work Gallery" },
@@ -28,12 +28,12 @@ export function Navigation() {
      },
          {
        label: "Contact",
-       bgColor: "#991b1b", 
-       textColor: "#fff",
+       bgColor: "#1C1C1C",
+       textColor: "#FAFAFA",
       links: [
         { label: "Get Quote", href: "/contact", ariaLabel: "Get a Quote" },
         { label: "Location", href: "/contact", ariaLabel: "Our Location" },
-        { label: "Call Us", href: "tel:6098801919", ariaLabel: "Call Steve's Auto" }
+        { label: "Call Us", href: "tel:2675041533", ariaLabel: "Call Royalty Mobile Detailing" }
       ]
     }
   ];
@@ -41,12 +41,12 @@ export function Navigation() {
   return (
     <CardNav
       logo="/Steve'sLogo.png"
-      logoAlt="Steve's Auto Interior Logo"
+      logoAlt="Royalty Mobile Detailing Logo"
       items={items}
-      baseColor="#fff"
-      menuColor="#000"
-      buttonBgColor="#e11d48"
-      buttonTextColor="#fff"
+      baseColor="#FAFAFA"
+      menuColor="#1C1C1C"
+      buttonBgColor="#0B3D91"
+      buttonTextColor="#FAFAFA"
       ease="power3.out"
     />
   );

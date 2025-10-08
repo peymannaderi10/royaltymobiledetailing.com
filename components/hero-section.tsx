@@ -31,10 +31,10 @@ export function HeroSection() {
 
         <div className="mb-6">
           <h1 className="text-5xl md:text-7xl font-bold text-primary mb-2 font-[family-name:var(--font-heading)] text-balance">
-            Steve's Auto
+            <span className="whitespace-nowrap">Royalty Detailing</span>
           </h1>
           <RotatingText
-            texts={['Restoration','Interiors', 'Sunroofs', 'Convertibles', 'Maintenance']}
+            texts={['Restoration','Interior', 'Exterior', 'Showroom', 'Polishing','Buffing']}
             mainClassName="text-5xl md:text-7xl font-bold text-accent overflow-hidden py-1 justify-center"
             staggerFrom="last"
             initial={{ y: "100%" }}
@@ -48,11 +48,11 @@ export function HeroSection() {
         </div>
 
         <p className="text-xl md:text-2xl text-muted-foreground mb-4 font-[family-name:var(--font-body)]">
-          Your One-Stop Shop for Auto Interiors, Sunroofs & Maintenance
+          Professional Mobile Auto Detailing & Restoration Services
         </p>
 
         <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto font-[family-name:var(--font-body)]">
-          Serving Beverly & Edgewater Park, NJ.
+          Serving the Philadelphia Tri-State Area
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -65,20 +65,20 @@ export function HeroSection() {
               Schedule Service
             </Button>
           </Link>
-          <Link href="tel:6098801919">
+          <Link href="tel:2675041533">
             <Button
               variant="outline"
               size="lg"
               className="px-8 py-6 text-lg font-semibold border-primary text-primary hover:bg-primary hover:text-primary-foreground bg-transparent"
             >
               <Phone className="w-5 h-5 mr-2" />
-              (609) 880-1919
+              (267) 504-1533
             </Button>
           </Link>
         </div>
 
         <div className="mt-12 text-sm text-muted-foreground font-[family-name:var(--font-body)]">
-          <p>📍 4375 US-130 # D, Beverly/Edgewater Park, NJ 08010</p>
+          <p>📍 Mobile Service Throughout Philadelphia Tri-State Area</p>
           <p className="mt-1">🕒 Mon-Fri 8:30AM-6PM • Sat 9AM-3PM • Sun Closed</p>
         </div>
       </div>

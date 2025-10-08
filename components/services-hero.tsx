@@ -22,7 +22,7 @@ export function ServicesHero() {
             className="border-primary text-primary hover:bg-primary hover:text-primary-foreground bg-transparent"
           >
             <Phone className="w-5 h-5 mr-2" />
-            (609) 880-1919
+            (267) 504-1533
           </Button>
         </div>
       </div>

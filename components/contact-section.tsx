@@ -30,7 +30,7 @@ export function ContactSection() {
               </CardHeader>
               <CardContent>
                 <p className="text-2xl font-bold text-primary mb-2 font-[family-name:var(--font-heading)]">
-                  (609) 880-1919
+                  (267) 504-1533
                 </p>
                 <p className="text-muted-foreground font-[family-name:var(--font-body)]">
                   Speak directly with our experts about your automotive needs

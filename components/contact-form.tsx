@@ -86,12 +86,12 @@ export function ContactForm() {
                     <SelectValue placeholder="Select a service" />
                   </SelectTrigger>
                   <SelectContent>
-                    <SelectItem value="convertible-top">Convertible Top</SelectItem>
-                    <SelectItem value="sunroof">Sunroof/Moonroof</SelectItem>
-                    <SelectItem value="headliner">Headliner Replacement</SelectItem>
-                    <SelectItem value="interior">Interior Restoration</SelectItem>
-                    <SelectItem value="seat-covers">Custom Seat Covers</SelectItem>
-                    <SelectItem value="maintenance">General Maintenance</SelectItem>
+                    <SelectItem value="full-detail">Full Detail Service</SelectItem>
+                    <SelectItem value="interior-detail">Interior Detailing</SelectItem>
+                    <SelectItem value="exterior-detail">Exterior Detailing</SelectItem>
+                    <SelectItem value="ceramic-coating">Ceramic Coating</SelectItem>
+                    <SelectItem value="paint-correction">Paint Correction</SelectItem>
+                    <SelectItem value="mobile-service">Mobile Service</SelectItem>
                     <SelectItem value="other">Other/Not Sure</SelectItem>
                   </SelectContent>
                 </Select>
@@ -124,7 +124,7 @@ export function ContactForm() {
               </Button>
 
               <p className="text-xs text-muted-foreground text-center">
-                By submitting this form, you agree to be contacted by Steve's Auto Interior & Sunroofs regarding your
+                By submitting this form, you agree to be contacted by Royalty Mobile Detailing regarding your
                 inquiry.
               </p>
             </form>

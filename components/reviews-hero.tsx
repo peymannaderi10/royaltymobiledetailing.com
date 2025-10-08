@@ -17,7 +17,7 @@ export function ReviewsHero() {
           Customer Reviews
         </h1>
         <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-          See what our customers say about Steve's Auto Interior & Sunroofs. Real reviews from real customers who trust us with their vehicles.
+          See what our customers say about Royalty Mobile Detailing. Real reviews from real customers who trust us with their vehicles.
         </p>
       </div>
     </section>

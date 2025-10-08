@@ -18,10 +18,10 @@ const nextConfig = {
         has: [
           {
             type: 'host',
-            value: 'www.stevesautointerior.com',
+            value: 'www.royaltymobiledetailing.com',
           },
         ],
-        destination: 'https://stevesautointerior.com/:path*',
+        destination: 'https://royaltymobiledetailing.com/:path*',
         permanent: true,
       },
     ]

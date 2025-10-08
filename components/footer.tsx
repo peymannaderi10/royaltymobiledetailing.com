@@ -9,10 +9,10 @@ export function Footer() {
           {/* Company Info */}
           <div>
             <h3 className="text-xl font-bold mb-4 font-[family-name:var(--font-heading)]">
-              Steve's Auto Interior & Sunroofs
+              Royalty Mobile Detailing
             </h3>
             <p className="text-primary-foreground/80 mb-4 font-[family-name:var(--font-body)]">
-              Expert automotive interior restoration and sunroof services in Beverly/Edgewater Park, NJ since 2003.
+              Professional mobile auto detailing and ceramic coating services in Beverly/Edgewater Park, NJ since 2003.
             </p>
             <div className="flex items-center gap-2">
               <div className="flex">
@@ -30,32 +30,32 @@ export function Footer() {
             <ul className="space-y-2 text-primary-foreground/80 font-[family-name:var(--font-body)]">
               <li>
                 <Link href="/services" className="hover:text-accent transition-colors">
-                  Convertible Tops
+                  Full Detail Service
                 </Link>
               </li>
               <li>
                 <Link href="/services" className="hover:text-accent transition-colors">
-                  Sunroof/Moonroof Repair
+                  Interior Detailing
                 </Link>
               </li>
               <li>
                 <Link href="/services" className="hover:text-accent transition-colors">
-                  Headliner Replacement
+                  Exterior Detailing
                 </Link>
               </li>
               <li>
                 <Link href="/services" className="hover:text-accent transition-colors">
-                  Interior Restoration
+                  Ceramic Coating
                 </Link>
               </li>
               <li>
                 <Link href="/services" className="hover:text-accent transition-colors">
-                  Custom Seat Covers
+                  Paint Correction
                 </Link>
               </li>
               <li>
                 <Link href="/services" className="hover:text-accent transition-colors">
-                  Maintenance Services
+                  Mobile Services
                 </Link>
               </li>
             </ul>
@@ -67,7 +67,7 @@ export function Footer() {
             <div className="space-y-3 text-primary-foreground/80">
               <div className="flex items-center gap-2">
                 <Phone className="w-4 h-4 text-accent" />
-                <span className="font-[family-name:var(--font-body)]">(609) 880-1919</span>
+                <span className="font-[family-name:var(--font-body)]">(267) 504-1533</span>
               </div>
               <div className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 text-accent mt-1" />
@@ -97,8 +97,8 @@ export function Footer() {
 
         <div className="border-t border-primary-foreground/20 mt-12 pt-8 text-center">
           <p className="text-primary-foreground/60 font-[family-name:var(--font-body)]">
-            © 2024 Steve's Auto Interior & Sunroofs. All rights reserved. |
-            <span className="text-accent"> Auto Upholstery NJ • Sunroof Repair NJ • Convertible Top Replacement</span>
+            © 2024 Royalty Mobile Detailing. All rights reserved. |
+            <span className="text-accent"> Mobile Auto Detailing NJ • Ceramic Coating NJ • Paint Correction</span>
           </p>
         </div>
       </div>

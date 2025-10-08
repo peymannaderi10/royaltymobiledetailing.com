@@ -29,7 +29,7 @@ export function ReviewsSection() {
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <Button className="bg-accent hover:bg-accent/90 text-accent-foreground">
                 <Phone className="w-4 h-4 mr-2" />
-                Call (609) 880-1919
+                Call (267) 504-1533
               </Button>
               <Button variant="outline" className="border-accent text-accent hover:bg-accent hover:text-accent-foreground">
                 <MapPin className="w-4 h-4 mr-2" />
