@@ -1,67 +1,125 @@
+import React from "react";
+import { ArrowRight, Sparkles, Crown, Zap } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Car, Sun, Scissors } from "lucide-react"
-import Link from "next/link"
+import Link from "next/link"; // or your router
+import AnimatedContent from './AnimatedContent'
+// import AnimatedContent, Card, CardHeader, CardTitle, CardDescription, CardContent, Button from your UI lib
 
-export function FeaturedServices() {
-  const services = [
-    {
-      icon: Car,
-      title: "Convertible Tops",
-      description: "OEM replacements, custom options, and hydraulic frame repair",
-      features: ["Canvas & Vinyl Tops", "Hydraulic Systems", "Frame Repair"],
-    },
-    {
-      icon: Sun,
-      title: "Sunroof Services",
-      description: "Complete mechanical and electrical repair with leak fixes",
-      features: ["Leak Repair", "Motor Replacement", "Glass Installation"],
-    },
-    {
-      icon: Scissors,
-      title: "Interior Restoration",
-      description: "Complete upholstery, trim work, and dashboard restoration",
-      features: ["Seat Upholstery", "Dashboard Repair", "Trim Restoration"],
-    },
-  ]
+const services = [
+  {
+    icon: Crown,
+    title: "Deluxe Detail",
+    description: "A deeper clean for both the inside and outside of your vehicle. Perfect for regular maintenance.",
+    features: ["Power wash & dry", "Tire & wheel cleaning", "Interior vacuum", "Window cleaning"],
+    price: "$160-$200",
+    duration: "2.5-3 hours",
+  },
+  {
+    icon: Sparkles,
+    title: "Showroom Ready Package",
+    description: "The ultimate detail experience for those who want perfection. Every inch cleaned, polished, and protected.",
+    features: ["Complete inside & out detail", "Engine bay detail", "Buffing & polishing"],
+    price: "$350-$400",
+    duration: "4-4.5 hours",
+  },
+  {
+    icon: Zap,
+    title: "Ultimate Basic",
+    description: "A fast, affordable refresh to keep your car looking sharp. Perfect for routine upkeep.",
+    features: ["Power wash & dry", "Tire & wheel cleaning", "Interior vacuum", "Trunk vacuum"],
+    price: "$100-$150",
+    duration: "1.5-2 hours",
+  },
+];
 
+export default function FeaturedServices() {
   return (
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-6">
+      {/* Header */}
+      <AnimatedContent
+        distance={80}
+        direction="vertical"
+        reverse={false}
+        duration={0.6}
+        ease="power2.out"
+        initialOpacity={0}
+        animateOpacity={true}
+        scale={0.95}
+        threshold={0.4}
+      >
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-primary mb-4 font-[family-name:var(--font-heading)]">
-            Our Specialty Services
+            Our Most Popular Services
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Expert craftsmanship in auto interior restoration, sunroof repair, and convertible top services
+            Choose from our most requested detailing packages, from basic maintenance to complete restoration.
           </p>
         </div>
+      </AnimatedContent>
 
-        <div className="grid md:grid-cols-3 gap-8 mb-12">
-          {services.map((service, index) => (
-            <Card key={index} className="group hover:shadow-lg transition-all duration-300 border-border/50">
-              <CardHeader className="text-center pb-4">
-                <div className="w-16 h-16 mx-auto mb-4 bg-accent/10 rounded-full flex items-center justify-center group-hover:bg-accent/20 transition-colors">
-                  <service.icon className="w-8 h-8 text-accent" />
-                </div>
-                <CardTitle className="text-xl font-bold text-primary">{service.title}</CardTitle>
-                <CardDescription className="text-muted-foreground">{service.description}</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-2 mb-6">
-                  {service.features.map((feature, idx) => (
-                    <li key={idx} className="flex items-center text-sm text-muted-foreground">
-                      <div className="w-1.5 h-1.5 bg-accent rounded-full mr-3" />
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
+      {/* Services grid */}
+      <div className="grid gap-6 md:grid-cols-3">
+        {services.map((service, index) => {
+          const Icon = service.icon; // component
+          return (
+            <AnimatedContent
+              key={service.title + index}
+              distance={100}
+              direction="vertical"
+              reverse={index % 2 === 1}
+              duration={0.8}
+              ease="power2.out"
+              initialOpacity={0}
+              animateOpacity={true}
+              scale={0.85}
+              threshold={0.3}
+              delay={index * 0.15}
+            >
+              <Card className="group hover:shadow-lg transition-all duration-300 border-border/50">
+                <CardHeader className="text-center pb-4">
+                  <div className="w-16 h-16 mx-auto mb-4 bg-accent/10 rounded-full flex items-center justify-center group-hover:bg-accent/20 transition-colors">
+                    <Icon className="w-8 h-8 text-accent" />
+                  </div>
+                  <CardTitle className="text-xl font-bold text-primary">{service.title}</CardTitle>
+                  <CardDescription className="text-muted-foreground">{service.description}</CardDescription>
+                </CardHeader>
 
-        <div className="text-center">
+                <CardContent>
+                  <div className="mb-4 p-3 bg-muted/50 rounded-lg">
+                    <div className="text-sm font-semibold text-primary mb-1">{service.price}</div>
+                    <div className="text-xs text-muted-foreground">{service.duration}</div>
+                  </div>
+
+                  <ul className="space-y-2 mb-6">
+                    {service.features.map((feature, idx) => (
+                      <li key={idx} className="flex items-center text-sm text-muted-foreground">
+                        <div className="w-1.5 h-1.5 bg-accent rounded-full mr-3" />
+                        {feature}
+                      </li>
+                    ))}
+                  </ul>
+                </CardContent>
+              </Card>
+            </AnimatedContent>
+          );
+        })}
+      </div>
+
+      {/* CTA */}
+      <AnimatedContent
+        distance={80}
+        direction="vertical"
+        reverse={false}
+        duration={0.6}
+        ease="power2.out"
+        initialOpacity={0}
+        animateOpacity={true}
+        scale={0.95}
+        threshold={0.4}
+      >
+        <div className="text-center mt-8">
           <Link href="/services">
             <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground">
               View All Services
@@ -69,7 +127,8 @@ export function FeaturedServices() {
             </Button>
           </Link>
         </div>
+      </AnimatedContent>
       </div>
     </section>
-  )
+  );
 }
