@@ -77,7 +77,7 @@ export default function FeaturedServices() {
               threshold={0.3}
               delay={index * 0.15}
             >
-              <Card className="group hover:shadow-lg transition-all duration-300 border-border/50">
+              <Card className="group hover:shadow-lg transition-all duration-300 border-border/50 h-full flex flex-col">
                 <CardHeader className="text-center pb-4">
                   <div className="w-16 h-16 mx-auto mb-4 bg-accent/10 rounded-full flex items-center justify-center group-hover:bg-accent/20 transition-colors">
                     <Icon className="w-8 h-8 text-accent" />
@@ -86,13 +86,13 @@ export default function FeaturedServices() {
                   <CardDescription className="text-muted-foreground">{service.description}</CardDescription>
                 </CardHeader>
 
-                <CardContent>
+                <CardContent className="flex-1 flex flex-col">
                   <div className="mb-4 p-3 bg-muted/50 rounded-lg">
                     <div className="text-sm font-semibold text-primary mb-1">{service.price}</div>
                     <div className="text-xs text-muted-foreground">{service.duration}</div>
                   </div>
 
-                  <ul className="space-y-2 mb-6">
+                  <ul className="space-y-2 mb-6 flex-1">
                     {service.features.map((feature, idx) => (
                       <li key={idx} className="flex items-center text-sm text-muted-foreground">
                         <div className="w-1.5 h-1.5 bg-accent rounded-full mr-3" />
