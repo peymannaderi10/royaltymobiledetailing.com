@@ -3,7 +3,7 @@ import { Phone, Star } from "lucide-react"
 
 export function ContactHero() {
   return (
-    <section className="relative pt-36 pb-24 bg-gradient-to-br from-primary/10 to-accent/10">
+    <section className="relative pt-36 pb-24 bg-white">
       <div className="max-w-4xl mx-auto px-6 text-center">
         <div className="mb-6 flex items-center justify-center gap-2">
           <div className="flex">
@@ -26,9 +26,12 @@ export function ContactHero() {
             variant="outline"
             size="lg"
             className="border-primary text-primary hover:bg-primary hover:text-primary-foreground bg-transparent"
+            asChild
           >
-            <Phone className="w-5 h-5 mr-2" />
-            (267) 504-1533
+            <a href="tel:2675041533">
+              <Phone className="w-5 h-5 mr-2" />
+              (267) 504-1533
+            </a>
           </Button>
         </div>
       </div>

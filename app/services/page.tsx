@@ -1,6 +1,7 @@
 import { Navigation } from "@/components/navigation"
 import { ServicesHero } from "@/components/services-hero"
-import { ServicesGrid } from "@/components/services-grid"
+import DetailingPackages from "@/components/detailing-packages"
+import IndividualServices from "@/components/individual-services"
 import { ServiceProcess } from "@/components/service-process"
 import { Footer } from "@/components/footer"
 import { AccentDotSplitter, LineSplitter } from "@/components/section-splitters"
@@ -10,8 +11,10 @@ export default function ServicesPage() {
     <main className="min-h-screen">
       <Navigation />
       <ServicesHero />
-      <ServicesGrid />
+      <DetailingPackages />
       <AccentDotSplitter />
+      <IndividualServices />
+      <LineSplitter />
       <ServiceProcess />
       <Footer />
     </main>

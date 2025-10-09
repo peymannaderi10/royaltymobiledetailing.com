@@ -5,39 +5,39 @@ export function AboutStats() {
   const stats = [
     {
       icon: Calendar,
-      value: "2003",
-      label: "Established",
-      description: "Over 20 years serving NJ",
+      value: "2024",
+      label: "Founded",
+      description: "New local business",
     },
     {
       icon: Users,
-      value: "1000+",
-      label: "Happy Customers",
-      description: "Satisfied clients and counting",
+      value: "Growing",
+      label: "Client Base",
+      description: "Building our reputation",
     },
     {
       icon: Star,
-      value: "4.8",
-      label: "Average Rating",
-      description: "Based on 148 reviews",
+      value: "5.0",
+      label: "Quality Focus",
+      description: "Every job matters",
     },
     {
       icon: Award,
-      value: "Expert",
-      label: "Craftsmanship",
-      description: "Quality guaranteed work",
+      value: "Mobile",
+      label: "Service Type",
+      description: "We come to you",
     },
     {
       icon: Wrench,
-      value: "6",
-      label: "Service Categories",
-      description: "Complete auto interior solutions",
+      value: "3",
+      label: "Service Areas",
+      description: "Interior, Exterior, Add-ons",
     },
     {
       icon: MapPin,
-      value: "Local",
-      label: "Community Focus",
-      description: "Beverly & Edgewater Park",
+      value: "Tri-State",
+      label: "Service Area",
+      description: "Philadelphia region",
     },
   ]
 
@@ -49,7 +49,7 @@ export function AboutStats() {
             By the Numbers
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Two decades of experience, countless satisfied customers, and a commitment to excellence
+            A new business with fresh energy, competitive pricing, and a commitment to building lasting relationships
           </p>
         </div>
 

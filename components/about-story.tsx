@@ -3,27 +3,27 @@ import { Card, CardContent } from "@/components/ui/card"
 export function AboutStory() {
   return (
     <section className="py-20 bg-white">
-      <div className="max-w-4xl mx-auto px-6">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="grid md:grid-cols-2 gap-16 items-center">
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6 font-[family-name:var(--font-heading)]">
               Our Story
             </h2>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                Founded in 2003, Royalty Mobile Detailing began as a small, family-owned business with a simple
-                mission: to provide exceptional auto interior services with unmatched attention to detail and customer
-                care.
+                Royalty Mobile Detailing was founded by Ed with a vision to bring professional-grade mobile detailing 
+                services to the Philadelphia Tri-State Area. As a new local business, we're passionate about transforming 
+                vehicles and building lasting relationships with our community through exceptional detailing services.
               </p>
               <p>
-                What started as a passion for automotive craftsmanship has grown into New Jersey's trusted destination
-                for premium mobile detailing, ceramic coating, and complete paint correction services. Our small but expert
-                team takes pride in solving complex problems that other shops can't handle.
+                Ed brings years of automotive detailing expertise and a commitment to perfection that sets us apart. 
+                We understand that as a new business, we need to prove ourselves with every detail job. That's why we 
+                go above and beyond to ensure every vehicle leaves looking showroom-ready.
               </p>
               <p>
-                Located in the heart of Beverly/Edgewater Park, we've built lasting relationships with our community by
-                consistently delivering quality work, fair pricing, and honest service. Every vehicle that leaves our
-                shop represents our commitment to excellence.
+                We're building our reputation one detail at a time, focusing on mobile convenience, competitive pricing, 
+                and results that speak for themselves. From basic washes to showroom-quality details, every service 
+                matters to us, and we're excited to show you what makes Royalty Mobile Detailing different.
               </p>
             </div>
           </div>
@@ -33,8 +33,8 @@ export function AboutStory() {
               <CardContent className="p-6">
                 <h3 className="text-xl font-semibold text-primary mb-3">Our Mission</h3>
                 <p className="text-muted-foreground">
-                  To restore and enhance vehicle appearance with expert craftsmanship, using quality materials and proven
-                  techniques that stand the test of time.
+                  To provide exceptional mobile detailing services that transform vehicles and exceed expectations, 
+                  building trust and loyalty in our community through consistent quality and outstanding customer service.
                 </p>
               </CardContent>
             </Card>
@@ -43,8 +43,8 @@ export function AboutStory() {
               <CardContent className="p-6">
                 <h3 className="text-xl font-semibold text-primary mb-3">Our Promise</h3>
                 <p className="text-muted-foreground">
-                  Every job is backed by our satisfaction guarantee. We don't consider a project complete until you're
-                  completely happy with the results.
+                  As a new detailing business, we're committed to proving ourselves with every detail job. Your vehicle's 
+                  transformation is our top priority, and we stand behind our work with a complete satisfaction guarantee.
                 </p>
               </CardContent>
             </Card>

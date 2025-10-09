@@ -5,16 +5,16 @@ import Link from "next/link"
 
 export function CallToAction() {
   return (
-    <section className="py-20 bg-gradient-to-br from-primary/5 to-accent/5">
+    <section className="py-20 bg-white">
       <div className="max-w-4xl mx-auto px-6 text-center">
         <Card className="border-none bg-background/80 backdrop-blur-sm">
           <CardContent className="p-12">
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4 font-[family-name:var(--font-heading)]">
-              Ready to Restore Your Vehicle?
+              Ready to Transform Your Vehicle?
             </h2>
             <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Get expert auto interior and sunroof services from New Jersey's trusted specialists. Call today for a free
-              consultation and estimate.
+              Premium mobile detailing services that come to you. From basic washes to showroom-quality details, 
+              we bring the expertise right to your doorstep.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
@@ -42,10 +42,10 @@ export function CallToAction() {
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center text-sm text-muted-foreground">
               <div className="flex items-center gap-2">
                 <MapPin className="w-4 h-4" />
-                <span>4375 US-130 # D, Beverly/Edgewater Park, NJ</span>
+                <span>Mobile Service Throughout Philadelphia Tri-State Area</span>
               </div>
               <div className="flex items-center gap-2">
-                <span>🕒 Mon-Fri 8:30AM-6PM • Sat 9AM-3PM</span>
+                <span>🕒 6AM-10PM • By Appointment</span>
               </div>
             </div>
           </CardContent>

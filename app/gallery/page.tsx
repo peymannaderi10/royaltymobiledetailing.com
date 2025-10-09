@@ -1,7 +1,6 @@
 import { Navigation } from "@/components/navigation"
 import { GalleryHero } from "@/components/gallery-hero"
-import { GalleryGrid } from "@/components/gallery-grid"
-import { BeforeAfterSection } from "@/components/before-after-section"
+import BeforeAfterToggle from "@/components/before-after-toggle"
 import { Footer } from "@/components/footer"
 import { WaveSplitter, DoubleLineSplitter } from "@/components/section-splitters"
 
@@ -10,8 +9,8 @@ export default function GalleryPage() {
     <main className="min-h-screen">
       <Navigation />
       <GalleryHero />
-      <BeforeAfterSection />
-      <GalleryGrid />
+      <WaveSplitter />
+      <BeforeAfterToggle />
       <Footer />
     </main>
   )

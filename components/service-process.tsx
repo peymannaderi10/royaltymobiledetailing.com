@@ -1,43 +1,43 @@
 import { Card, CardContent } from "@/components/ui/card"
-import { Phone, Calendar, Wrench, CheckCircle } from "lucide-react"
+import { Phone, Calendar, Car, CheckCircle } from "lucide-react"
 
 export function ServiceProcess() {
   const steps = [
     {
       icon: Phone,
-      title: "Contact Us",
-      description: "Call or schedule online for a free consultation and estimate",
-      details: "We'll discuss your needs and provide transparent pricing upfront",
+      title: "Call or Text",
+      description: "Contact us for a free consultation and custom quote",
+      details: "We'll discuss your vehicle's needs and provide transparent pricing",
     },
     {
       icon: Calendar,
       title: "Schedule Service",
       description: "Book an appointment that fits your schedule",
-      details: "Flexible scheduling with convenient drop-off and pickup options",
+      details: "Flexible scheduling 6AM-10PM, 6 days a week throughout the tri-state area",
     },
     {
-      icon: Wrench,
-      title: "Expert Work",
-      description: "Our skilled technicians perform quality repairs and installations",
-      details: "Using premium materials and proven techniques for lasting results",
+      icon: Car,
+      title: "We Come to You",
+      description: "Our mobile team arrives at your location with all equipment",
+      details: "Professional detailing service right at your home, office, or anywhere convenient",
     },
     {
       icon: CheckCircle,
-      title: "Quality Guarantee",
-      description: "Inspect completed work and enjoy our satisfaction guarantee",
-      details: "We stand behind our work with comprehensive warranties",
+      title: "Satisfaction Guaranteed",
+      description: "Inspect the completed work and enjoy our quality guarantee",
+      details: "We stand behind every detail with our satisfaction guarantee",
     },
   ]
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-10 bg-white">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-primary mb-4 font-[family-name:var(--font-heading)]">
             Our Service Process
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Simple, transparent process from initial consultation to completed work
+            Simple, convenient mobile detailing process from booking to completion
           </p>
         </div>
 
@@ -61,9 +61,9 @@ export function ServiceProcess() {
 
         <div className="mt-16 text-center">
           <div className="bg-background/80 backdrop-blur-sm rounded-lg p-8 max-w-2xl mx-auto">
-            <h3 className="text-2xl font-bold text-primary mb-4">Ready to Get Started?</h3>
+            <h3 className="text-2xl font-bold text-primary mb-4">Ready to Transform Your Vehicle?</h3>
             <p className="text-muted-foreground mb-6">
-              Contact us today for a free consultation and estimate on your auto interior or sunroof needs
+              Contact us today for a free consultation and custom quote on your mobile detailing needs
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href="tel:2675041533" className="inline-block">
@@ -73,7 +73,7 @@ export function ServiceProcess() {
                 </button>
               </a>
               <button className="border border-primary text-primary hover:bg-primary hover:text-primary-foreground px-6 py-3 rounded-md font-semibold bg-transparent">
-                Schedule Online
+                Schedule Service
               </button>
             </div>
           </div>

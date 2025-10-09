@@ -99,7 +99,7 @@ export default function BeforeAfterCarousel({
   return (
     <div
       ref={containerRef}
-      className="relative overflow-hidden w-full h-[620px] sm:h-[640px] md:h-[680px] lg:h-[720px]"
+      className="relative overflow-hidden w-full h-[500px] sm:h-[450px] md:h-[440px] lg:h-[460px] bg-transparent"
     >
       <motion.div
         className="flex"
@@ -127,7 +127,7 @@ export default function BeforeAfterCarousel({
           return (
             <motion.div
               key={index}
-              className="relative shrink-0 flex flex-col bg-white border border-[#1C1C1C] rounded-[12px] overflow-hidden cursor-grab active:cursor-grabbing"
+              className="relative shrink-0 flex flex-col bg-transparent border border-[#1C1C1C] rounded-[12px] overflow-hidden cursor-grab active:cursor-grabbing"
               style={{
                 width: itemWidth,
                 height: '100%',
@@ -164,7 +164,7 @@ export default function BeforeAfterCarousel({
               </div>
 
               {/* Content */}
-              <div className="p-5 bg-white">
+              <div className="p-5 bg-transparent">
                 <div className="mb-1 font-black text-lg text-primary">{item.title}</div>
                 <p className="text-sm text-muted-foreground">{item.description}</p>
               </div>
@@ -174,7 +174,7 @@ export default function BeforeAfterCarousel({
       </motion.div>
 
       {/* Indicators */}
-      <div className="flex w-full justify-center absolute bottom-2 md:bottom-4 left-1/2 -translate-x-1/2 z-20">
+      <div className="flex w-full justify-center absolute bottom-3 sm:bottom-8 md:bottom-10 left-1/2 -translate-x-1/2 z-20">
         <div className="flex w-[150px] justify-between px-8">
           {items.map((_, index) => (
             <motion.div

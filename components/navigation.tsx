@@ -4,15 +4,14 @@ import CardNav from './CardNav'
 
 export function Navigation() {
   const items = [
-         {
-       label: "Services",
-       bgColor: "#0B3D91",
-       textColor: "#FAFAFA",
-      links: [
-        { label: "Full Detail", href: "/services", ariaLabel: "Full Auto Detailing Services" },
-        { label: "Interior", href: "/services", ariaLabel: "Interior Detailing Services" },
-        { label: "Exterior", href: "/services", ariaLabel: "Exterior Detailing Services" },
-        { label: "Ceramic Coating", href: "/services", ariaLabel: "Ceramic Coating Services" }
+    {
+      label: "Services",
+      bgColor: "#0B3D91",
+      textColor: "#FAFAFA",
+     links: [
+        { label: "All Services", href: "/services", ariaLabel: "All Detailing Services" },
+        { label: "Our Work", href: "/gallery", ariaLabel: "Our Work Gallery" },
+        { label: "FAQ", href: "/faq", ariaLabel: "Frequently Asked Questions" }
       ]
     },
          {
@@ -21,7 +20,6 @@ export function Navigation() {
        textColor: "#1C1C1C",
        links: [
          { label: "Our Story", href: "/about", ariaLabel: "About Our Company" },
-         { label: "Gallery", href: "/gallery", ariaLabel: "Work Gallery" },
          { label: "Blog", href: "/blog", ariaLabel: "Our Blog" },
          { label: "Reviews", href: "/reviews", ariaLabel: "Customer Reviews" }
        ]
@@ -31,7 +29,7 @@ export function Navigation() {
        bgColor: "#1C1C1C",
        textColor: "#FAFAFA",
       links: [
-        { label: "Get Quote", href: "/contact", ariaLabel: "Get a Quote" },
+        { label: "Get Custom Quote", href: "/contact", ariaLabel: "Get a Custom Quote" },
         { label: "Location", href: "/contact", ariaLabel: "Our Location" },
         { label: "Call Us", href: "tel:2675041533", ariaLabel: "Call Royalty Mobile Detailing" }
       ]
