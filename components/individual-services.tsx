@@ -70,21 +70,23 @@ const exteriorServices = [
 const addOnServices = [
   {
     name: "Pet Hair Removal",
+    description: "Specialized tools to remove pet hair from seats, carpets, and upholstery",
     price: "$40"
   },
   {
     name: "Extra Dirty Vehicle Fee",
+    description: "Additional fee for vehicles requiring extra time and effort due to heavy soiling",
     price: "$40–$80"
   },
   {
     name: "Headlight Restoration",
+    description: "Restore cloudy, yellowed headlights to crystal clear condition",
     price: "$60+"
   },
   {
     name: "Buffing & Polishing",
-    description: "Remove light surface scratches and swirl marks, shine enhancement and gloss improvement",
-    price: "$225",
-    duration: "3 hours"
+    description: "Remove light scratches and swirl marks for enhanced shine and gloss",
+    price: "$225"
   }
 ];
 
