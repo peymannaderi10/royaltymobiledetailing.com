@@ -81,6 +81,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href="https://royaltymobiledetailing.com" />
         <meta name="geo.region" content="US" />
         <meta name="geo.placename" content="Mobile Service Area" />

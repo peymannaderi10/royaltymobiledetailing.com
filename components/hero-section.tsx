@@ -55,8 +55,8 @@ export default function HeroSection() {
         threshold={0.15}
       >
         <div className="mb-6">
-          <h1 className="text-5xl md:text-7xl font-bold text-primary mb-2 font-[family-name:var(--font-heading)]">
-            <span className="whitespace-nowrap">Royalty Detailing</span>
+          <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-primary mb-2 font-[family-name:var(--font-heading)]">
+            <span>Royalty Detailing</span>
           </h1>
 
           <RotatingText
@@ -68,7 +68,7 @@ export default function HeroSection() {
               "Polishing",
               "Buffing",
             ]}
-            mainClassName="text-5xl md:text-7xl font-bold text-accent overflow-hidden py-2 justify-center leading-tight"
+            mainClassName="text-4xl sm:text-5xl md:text-7xl font-bold text-accent overflow-hidden py-2 justify-center leading-tight"
             staggerFrom="last"
             initial={{ y: "100%" }}
             animate={{ y: 0 }}

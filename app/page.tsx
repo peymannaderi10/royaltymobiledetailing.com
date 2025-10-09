@@ -8,7 +8,7 @@ import { Footer } from "@/components/footer"
 import { GeometricSplitter, WaveSplitter, DoubleLineSplitter, AccentDotSplitter, DotsSplitter } from "@/components/section-splitters"
 export default function HomePage() {
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen overflow-x-hidden">
       <Navigation />
       <HeroSection />
       <FeaturedServices />

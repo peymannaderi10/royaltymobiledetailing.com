@@ -1,4 +1,4 @@
-import { Phone, MapPin, Clock, Star } from "lucide-react"
+import { Phone, MapPin, Clock, Star, Mail } from "lucide-react"
 import Link from "next/link"
 
 export function Footer() {
@@ -12,7 +12,7 @@ export function Footer() {
               Royalty Mobile Detailing
             </h3>
             <p className="text-primary-foreground/80 mb-4 font-[family-name:var(--font-body)]">
-              Professional mobile auto detailing and ceramic coating services in Beverly/Edgewater Park, NJ since 2003.
+              Professional mobile auto detailing services in the Philadelphia Tri-State Area. Founded in 2024, we bring showroom-quality results directly to your location.
             </p>
             <div className="flex items-center gap-2">
               <div className="flex">
@@ -30,7 +30,17 @@ export function Footer() {
             <ul className="space-y-2 text-primary-foreground/80 font-[family-name:var(--font-body)]">
               <li>
                 <Link href="/services" className="hover:text-accent transition-colors">
-                  Full Detail Service
+                  Deluxe Detail
+                </Link>
+              </li>
+              <li>
+                <Link href="/services" className="hover:text-accent transition-colors">
+                  Showroom Ready Package
+                </Link>
+              </li>
+              <li>
+                <Link href="/services" className="hover:text-accent transition-colors">
+                  Ultimate Basic
                 </Link>
               </li>
               <li>
@@ -41,16 +51,6 @@ export function Footer() {
               <li>
                 <Link href="/services" className="hover:text-accent transition-colors">
                   Exterior Detailing
-                </Link>
-              </li>
-              <li>
-                <Link href="/services" className="hover:text-accent transition-colors">
-                  Ceramic Coating
-                </Link>
-              </li>
-              <li>
-                <Link href="/services" className="hover:text-accent transition-colors">
-                  Paint Correction
                 </Link>
               </li>
               <li>
@@ -69,11 +69,17 @@ export function Footer() {
                 <Phone className="w-4 h-4 text-accent" />
                 <span className="font-[family-name:var(--font-body)]">(267) 504-1533</span>
               </div>
+              <div className="flex items-center gap-2">
+                <Mail className="w-4 h-4 text-accent" />
+                <a href="mailto:info@royaltymobiledetailing.com" className="font-[family-name:var(--font-body)] hover:text-accent transition-colors">
+                  info@royaltymobiledetailing.com
+                </a>
+              </div>
               <div className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 text-accent mt-1" />
                 <div className="font-[family-name:var(--font-body)]">
-                  <p>4375 US-130 # D</p>
-                  <p>Beverly/Edgewater Park, NJ 08010</p>
+                  <p>Philadelphia Tri-State Area</p>
+                  <p>Mobile Service Available</p>
                 </div>
               </div>
             </div>
@@ -86,8 +92,8 @@ export function Footer() {
               <div className="flex items-center gap-2">
                 <Clock className="w-4 h-4 text-accent" />
                 <div>
-                  <p>Mon-Fri: 8:30 AM - 6:00 PM</p>
-                  <p>Sat: 9:00 AM - 3:00 PM</p>
+                  <p>Mon-Sat: 6:00 AM - 10:00 PM</p>
+                  <p>By Appointment</p>
                   <p>Sun: Closed</p>
                 </div>
               </div>
@@ -98,7 +104,7 @@ export function Footer() {
         <div className="border-t border-primary-foreground/20 mt-12 pt-8 text-center">
           <p className="text-primary-foreground/60 font-[family-name:var(--font-body)]">
             © 2024 Royalty Mobile Detailing. All rights reserved. |
-            <span className="text-accent"> Mobile Auto Detailing NJ • Ceramic Coating NJ • Paint Correction</span>
+            <span className="text-accent"> Mobile Auto Detailing • Philadelphia Tri-State Area • Professional Detailing Services</span>
           </p>
         </div>
       </div>

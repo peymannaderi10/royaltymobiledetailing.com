@@ -158,7 +158,7 @@ const CardNav: React.FC<CardNavProps> = ({
 
   return (
     <div
-      className={`card-nav-container absolute left-1/2 -translate-x-1/2 w-[90%] max-w-[800px] z-[99] top-[1.2em] md:top-[2em] ${className}`}
+      className={`card-nav-container absolute left-1/2 -translate-x-1/2 w-[95%] max-w-[800px] z-[99] top-[1.2em] md:top-[2em] ${className}`}
     >
       <nav
         ref={navRef}
@@ -205,7 +205,7 @@ const CardNav: React.FC<CardNavProps> = ({
         </div>
 
         <div
-          className={`card-nav-content absolute left-0 right-0 top-[60px] bottom-0 p-2 flex flex-col items-stretch gap-2 justify-start z-[1] ${
+          className={`card-nav-content absolute left-0 right-0 top-[60px] bottom-0 p-2 flex flex-col items-stretch gap-2 justify-start z-[1] overflow-x-hidden ${
             isExpanded ? 'visible pointer-events-auto' : 'invisible pointer-events-none'
           } md:flex-row md:items-end md:gap-[12px]`}
           aria-hidden={!isExpanded}
