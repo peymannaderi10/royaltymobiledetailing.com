@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Car, Sparkles, Wrench, DollarSign, Phone, MessageCircle } from "lucide-react";
+import { Car, Sparkles, Plus, DollarSign, Phone, MessageCircle } from "lucide-react";
 import AnimatedContent from "./AnimatedContent";
 
 const interiorServices = [
@@ -146,7 +146,7 @@ export default function IndividualServices() {
                   : 'text-muted-foreground hover:text-primary'
               }`}
             >
-              <Car className="w-4 h-4" />
+              <Sparkles className="w-4 h-4" />
               Interior
             </button>
             <button
@@ -157,7 +157,7 @@ export default function IndividualServices() {
                   : 'text-muted-foreground hover:text-primary'
               }`}
             >
-              <Sparkles className="w-4 h-4" />
+              <Car className="w-4 h-4" />
               Exterior
             </button>
             <button
@@ -168,7 +168,7 @@ export default function IndividualServices() {
                   : 'text-muted-foreground hover:text-primary'
               }`}
             >
-              <Wrench className="w-4 h-4" />
+              <Plus className="w-4 h-4" />
               Add-Ons
             </button>
           </div>
