@@ -11,10 +11,10 @@ export default function BlogContent() {
   const categoryMap: Record<string, string[]> = useMemo(
     () => ({
       all: [],
-      maintenance: ["Maintenance Tips"],
-      convertible: ["Convertible Care"],
-      sunroof: ["Sunroof Advice"],
-      interior: ["Interior Care"],
+      maintenance: ["Car Care Tips"],
+      interior: ["Interior Detailing"],
+      exterior: ["Exterior Detailing"],
+      premium: ["Premium Services"],
       diy: ["DIY Tips"],
     }),
     []

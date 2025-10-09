@@ -1,7 +1,7 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
-import { Car, Sun, Scissors, Wrench, Lightbulb, Grid3X3 } from "lucide-react"
+import { Car, Sparkles, Droplets, Wrench, Lightbulb, Grid3X3 } from "lucide-react"
 
 type BlogCategoriesProps = {
   activeCategory: string
@@ -11,10 +11,10 @@ type BlogCategoriesProps = {
 export function BlogCategories({ activeCategory, onChange }: BlogCategoriesProps) {
   const categories = [
     { id: "all", name: "All Articles", icon: Grid3X3 },
-    { id: "maintenance", name: "Maintenance Tips", icon: Wrench },
-    { id: "convertible", name: "Convertible Care", icon: Car },
-    { id: "sunroof", name: "Sunroof Advice", icon: Sun },
-    { id: "interior", name: "Interior Care", icon: Scissors },
+    { id: "maintenance", name: "Car Care Tips", icon: Wrench },
+    { id: "interior", name: "Interior Detailing", icon: Car },
+    { id: "exterior", name: "Exterior Detailing", icon: Droplets },
+    { id: "premium", name: "Premium Services", icon: Sparkles },
     { id: "diy", name: "DIY Tips", icon: Lightbulb },
   ]
 
