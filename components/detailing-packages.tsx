@@ -19,7 +19,8 @@ const packages = [
       regular: "$100",
       plus: "$150"
     },
-    popular: false
+    popular: false,
+    squareAppointmentLink: "https://book.squareup.com/appointments/z8kedt6rlit7op/location/LWT57WDV6AKE0/services/IYGKUQLV6BB264CUZOILHIHE"
   },
   {
     name: "Deluxe Detail",
@@ -36,7 +37,8 @@ const packages = [
       regular: "$160",
       plus: "$200"
     },
-    popular: true
+    popular: true,
+    squareAppointmentLink: "https://book.squareup.com/appointments/z8kedt6rlit7op/location/LWT57WDV6AKE0/services/IUA7SUMZCIRG6UH2I33VCOQJ"
   },
   {
     name: "Ultimate Interior Detail",
@@ -55,7 +57,8 @@ const packages = [
       regular: "$150",
       plus: "$190"
     },
-    popular: false
+    popular: false,
+    squareAppointmentLink: "https://book.squareup.com/appointments/z8kedt6rlit7op/location/LWT57WDV6AKE0/services/BYHDTUR3CAOVWZZ7NPVBKTES"
   },
   {
     name: "Ultimate Exterior Detail",
@@ -71,7 +74,8 @@ const packages = [
       regular: "$120",
       plus: "$160"
     },
-    popular: false
+    popular: false,
+    squareAppointmentLink: "https://book.squareup.com/appointments/z8kedt6rlit7op/location/LWT57WDV6AKE0/services/VFRSEW7B6RPXVLBFZWDV5FUS"
   },
   {
     name: "Ultimate Inside & Out",
@@ -89,7 +93,8 @@ const packages = [
       regular: "$220",
       plus: "$260"
     },
-    popular: false
+    popular: false,
+    squareAppointmentLink: "https://book.squareup.com/appointments/z8kedt6rlit7op/location/LWT57WDV6AKE0/services/QEVOOJKIY3Z7YMTBQTTHGSKE"
   },
   {
     name: "Showroom Ready Package",
@@ -104,7 +109,8 @@ const packages = [
       regular: "$350",
       plus: "$400"
     },
-    popular: false
+    popular: false,
+    squareAppointmentLink: "https://book.squareup.com/appointments/z8kedt6rlit7op/location/LWT57WDV6AKE0/services/EHELKZWUS5EJDMVQWVK6MOG2"
   }
 ];
 
@@ -193,9 +199,11 @@ export default function DetailingPackages() {
                   </ul>
 
                   <div className="border-t border-border pt-4 mt-auto">
-                    <Button className="w-full bg-accent hover:bg-accent/90 text-accent-foreground">
-                      Book Now
-                    </Button>
+                    <a href={pkg.squareAppointmentLink} target="_blank" rel="noopener noreferrer">
+                      <Button className="w-full bg-accent hover:bg-accent/90 text-accent-foreground">
+                        Book Now
+                      </Button>
+                    </a>
                   </div>
                 </CardContent>
               </Card>

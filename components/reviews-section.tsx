@@ -35,10 +35,12 @@ export function ReviewsSection() {
               Join our satisfied customers and get expert mobile detailing services for your vehicle.
             </p>
             <div className="flex justify-center">
-              <Button className="bg-accent hover:bg-accent/90 text-accent-foreground">
-                <Phone className="w-4 h-4 mr-2" />
-                Call (267) 504-1533
-              </Button>
+              <a href="tel:2675041533">
+                <Button className="bg-accent hover:bg-accent/90 text-accent-foreground">
+                  <Phone className="w-4 h-4 mr-2" />
+                  Call (267) 504-1533
+                </Button>
+              </a>
             </div>
           </CardContent>
         </Card>

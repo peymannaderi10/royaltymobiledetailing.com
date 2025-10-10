@@ -51,10 +51,12 @@ export function TeamSection() {
               </p>
               
               <div className="mt-6">
-                <Button className="bg-accent hover:bg-accent/90 text-accent-foreground">
-                  <Phone className="w-4 h-4 mr-2" />
-                  Contact Ed Now
-                </Button>
+                <a href="tel:2675041533">
+                  <Button className="bg-accent hover:bg-accent/90 text-accent-foreground">
+                    <Phone className="w-4 h-4 mr-2" />
+                    Contact Ed Now
+                  </Button>
+                </a>
               </div>
             </div>
           </div>

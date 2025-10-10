@@ -198,9 +198,6 @@ export default function IndividualServices() {
                       {service.description && (
                         <p className="text-sm text-white/80">{service.description}</p>
                       )}
-                      {service.duration && (
-                        <p className="text-sm text-white/80">Duration: {service.duration}</p>
-                      )}
                     </div>
                     <div className="text-right">
                       <span className="text-lg font-bold text-white">{service.price}</span>
@@ -231,18 +228,22 @@ export default function IndividualServices() {
                 Call or text us to discuss your specific needs and get a custom quote for individual services.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground">
-                  <Phone className="w-5 h-5 mr-2" />
-                  Call (267) 504-1533
-                </Button>
-                <Button
-                  variant="outline"
-                  size="lg"
-                  className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
-                >
-                  <MessageCircle className="w-5 h-5 mr-2" />
-                  Text Us
-                </Button>
+                <a href="tel:2675041533">
+                  <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground">
+                    <Phone className="w-5 h-5 mr-2" />
+                    Call (267) 504-1533
+                  </Button>
+                </a>
+                <a href="sms:2675041533">
+                  <Button
+                    variant="outline"
+                    size="lg"
+                    className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+                  >
+                    <MessageCircle className="w-5 h-5 mr-2" />
+                    Text Us
+                  </Button>
+                </a>
               </div>
             </div>
           </div>

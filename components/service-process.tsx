@@ -72,9 +72,11 @@ export function ServiceProcess() {
                   Call (267) 504-1533
                 </button>
               </a>
-              <button className="border border-primary text-primary hover:bg-primary hover:text-primary-foreground px-6 py-3 rounded-md font-semibold bg-transparent">
-                Schedule Service
-              </button>
+              <a href="https://book.squareup.com/appointments/z8kedt6rlit7op/location/LWT57WDV6AKE0/services" target="_blank" rel="noopener noreferrer">
+                <button className="border border-primary text-primary hover:bg-primary hover:text-primary-foreground px-6 py-3 rounded-md font-semibold bg-transparent">
+                  Schedule Service
+                </button>
+              </a>
             </div>
           </div>
         </div>

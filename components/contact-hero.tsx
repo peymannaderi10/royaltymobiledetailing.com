@@ -18,8 +18,7 @@ export function ContactHero() {
           Contact Us
         </h1>
         <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-          Ready to restore your vehicle's interior? Get in touch for a free consultation and estimate on your auto
-          interior or sunroof needs
+          Ready for a spotless vehicle? Get in touch for a free consultation and custom quote on your detailing needs.
         </p>
         <div className="flex justify-center">
           <Button

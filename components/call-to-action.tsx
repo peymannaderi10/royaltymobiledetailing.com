@@ -18,7 +18,7 @@ export function CallToAction() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
-              <Link href="/contact">
+              <a href="https://book.squareup.com/appointments/z8kedt6rlit7op/location/LWT57WDV6AKE0/services" target="_blank" rel="noopener noreferrer">
                 <Button
                   size="lg"
                   className="bg-accent hover:bg-accent/90 text-accent-foreground px-8 py-6 text-lg font-semibold"
@@ -26,7 +26,7 @@ export function CallToAction() {
                   <Calendar className="w-5 h-5 mr-2" />
                   Schedule Service
                 </Button>
-              </Link>
+              </a>
               <Link href="tel:2675041533">
                 <Button
                   variant="outline"

@@ -139,10 +139,12 @@ export function ContactSection() {
                 />
               </div>
 
-              <Button className="w-full bg-accent hover:bg-accent/90 text-accent-foreground">
-                <Calendar className="w-4 h-4 mr-2" />
-                Request Service Appointment
-              </Button>
+              <a href="https://book.squareup.com/appointments/z8kedt6rlit7op/location/LWT57WDV6AKE0/services" target="_blank" rel="noopener noreferrer">
+                <Button className="w-full bg-accent hover:bg-accent/90 text-accent-foreground">
+                  <Calendar className="w-4 h-4 mr-2" />
+                  Request Service Appointment
+                </Button>
+              </a>
             </CardContent>
           </Card>
         </div>

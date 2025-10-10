@@ -17,10 +17,12 @@ export function ServicesHero() {
               we bring professional expertise right to your doorstep throughout the Philadelphia Tri-State Area.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground px-8 py-6 text-lg font-semibold">
-                <Calendar className="w-6 h-6 mr-2" />
-                Schedule Service
-              </Button>
+              <a href="https://book.squareup.com/appointments/z8kedt6rlit7op/location/LWT57WDV6AKE0/services" target="_blank" rel="noopener noreferrer">
+                <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground px-8 py-6 text-lg font-semibold">
+                  <Calendar className="w-6 h-6 mr-2" />
+                  Schedule Service
+                </Button>
+              </a>
               <Button
                 variant="outline"
                 size="lg"

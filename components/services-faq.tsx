@@ -119,9 +119,11 @@ export default function ServicesFAQ() {
                   <span>Call (267) 504-1533</span>
                 </button>
               </a>
-              <button className="border border-primary text-primary hover:bg-primary hover:text-primary-foreground px-6 py-3 rounded-md font-semibold bg-transparent">
-                Text Us
-              </button>
+              <a href="sms:2675041533" className="inline-block">
+                <button className="border border-primary text-primary hover:bg-primary hover:text-primary-foreground px-6 py-3 rounded-md font-semibold bg-transparent">
+                  Text Us
+                </button>
+              </a>
             </div>
           </div>
         </div>
