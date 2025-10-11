@@ -4,22 +4,22 @@ import { Star, Quote } from "lucide-react"
 export function CustomerReviews() {
   const reviews = [
     {
-      name: "Mike Johnson",
+      name: "Michael R.",
       rating: 5,
-      text: "Steve did an amazing job on my convertible top. The quality is outstanding and the price was very fair. Highly recommend!",
-      service: "Convertible Top Replacement",
+      text: "The Showroom Ready Package exceeded all my expectations! They came to my house and spent hours perfecting every detail. The buffing and polishing made my car look brand new. Highly recommend!",
+      service: "Showroom Ready Package",
     },
     {
-      name: "Sarah Chen",
+      name: "Jessica T.",
       rating: 5,
-      text: "Finally found someone who could fix my sunroof leak! Professional work and great communication throughout the process.",
-      service: "Sunroof Repair",
+      text: "Best mobile detailing service I've ever used! They detailed my SUV in my driveway while I worked from home. The interior looks brand new and they removed stains I thought were permanent.",
+      service: "Deluxe Detail",
     },
     {
-      name: "Robert Martinez",
+      name: "David L.",
       rating: 5,
-      text: "The interior restoration on my classic car exceeded my expectations. Steve's attention to detail is incredible.",
-      service: "Interior Restoration",
+      text: "Amazing work on my BMW! The buffing and polishing removed swirls and scratches, and the headlight restoration made them crystal clear. The convenience of mobile service made it even better!",
+      service: "Buffing & Polishing + Headlight Restoration",
     },
   ]
 

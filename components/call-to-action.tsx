@@ -42,7 +42,7 @@ export function CallToAction() {
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center text-sm text-muted-foreground">
               <div className="flex items-center gap-2">
                 <MapPin className="w-4 h-4" />
-                <span>Mobile Service Throughout Philadelphia Tri-State Area</span>
+                <span>Philadelphia, Tri-State Area</span>
               </div>
               <div className="flex items-center gap-2">
                 <span>🕒 6AM-10PM • By Appointment</span>

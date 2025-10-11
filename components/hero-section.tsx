@@ -160,7 +160,7 @@ export default function HeroSection() {
         threshold={0.4}
       >
         <div className="mt-12 text-sm text-muted-foreground font-[family-name:var(--font-body)]">
-          <p>📍 Mobile Service Throughout Philadelphia Tri-State Area</p>
+          <p>📍 Philadelphia, Tri-State Area</p>
           <p className="mt-1">🕒 Mon–Sat 6AM–10PM • Sun Closed</p>
         </div>
       </AnimatedContent>
