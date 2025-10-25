@@ -18,9 +18,13 @@ export function TeamSection() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
             <div className="relative overflow-hidden rounded-lg mx-auto w-full max-w-sm md:max-w-md h-96 md:h-[35rem] hover:scale-105 transition-all duration-300">
               <img 
-                src="/luxury-car-interior-with-sunroof-open-showing-craf.png" 
+                src="/aboutme2.png" 
                 alt="Ed - Owner & Founder" 
-                className="object-cover w-full h-full rounded-lg shadow-xl" 
+                className="w-full h-full rounded-lg shadow-xl" 
+                style={{ 
+                  objectFit: 'cover',
+                  objectPosition: 'center top'
+                }}
                 width="600" 
                 height="600" 
                 loading="lazy"
