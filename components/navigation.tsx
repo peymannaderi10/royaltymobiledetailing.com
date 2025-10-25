@@ -38,10 +38,10 @@ export function Navigation() {
 
   return (
     <CardNav
-      logo="/Steve'sLogo.png"
+      logo="/Mobile Detailing.png"
       logoAlt="Royalty Mobile Detailing Logo"
       items={items}
-      baseColor="#FAFAFA"
+      baseColor="#ffffff"
       menuColor="#1C1C1C"
       buttonBgColor="#0B3D91"
       buttonTextColor="#FAFAFA"

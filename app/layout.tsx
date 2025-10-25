@@ -51,7 +51,7 @@ export const metadata: Metadata = {
       "Professional mobile auto detailing service. Premium interior and exterior car detailing, ceramic coating, paint correction. Mobile service available.",
     images: [
       {
-        url: "/Steve'sLogo.png",
+        url: "/Mobile Detailing.png",
         width: 1200,
         height: 630,
         alt: "Royalty Mobile Detailing Logo",
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
     title: "Royalty Mobile Detailing | Premium Auto Detailing Service",
     description:
       "Professional mobile auto detailing service. Premium interior and exterior car detailing, ceramic coating, paint correction. Mobile service available.",
-    images: ["/Steve'sLogo.png"],
+    images: ["/Mobile Detailing.png"],
   },
   alternates: {
     canonical: "https://royaltymobiledetailing.com",

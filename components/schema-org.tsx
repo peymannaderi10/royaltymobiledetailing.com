@@ -27,7 +27,7 @@ export function BlogPostSchema({ title, description, url, image, publishedTime, 
       "name": "Royalty Mobile Detailing",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://royaltymobiledetailing.com/Steve'sLogo.png"
+        "url": "https://royaltymobiledetailing.com/Mobile Detailing.png"
       }
     },
     "mainEntityOfPage": {
@@ -61,7 +61,7 @@ export function SchemaOrg() {
     "name": "Royalty Mobile Detailing",
     "description": "Professional mobile auto detailing service offering premium interior and exterior car detailing, ceramic coating, and paint correction",
     "url": "https://royaltymobiledetailing.com",
-    "logo": "https://royaltymobiledetailing.com/Steve'sLogo.png",
+    "logo": "https://royaltymobiledetailing.com/Mobile Detailing.png",
     "image": [
       "https://royaltymobiledetailing.com/luxury-car-interior-restoration-leather-seats-dash.png",
       "https://royaltymobiledetailing.com/convertible-car-top-replacement-professional-insta.png",
