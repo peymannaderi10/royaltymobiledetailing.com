@@ -31,15 +31,12 @@ export default function HeroSection() {
         scale={0.95}
         threshold={0.1}
       >
-        <div className="mb-6 flex items-center justify-center gap-2">
-          <div className="flex">
-            {Array.from({ length: 5 }).map((_, i) => (
-              <Star key={i} className="w-5 h-5 fill-accent text-accent" />
-            ))}
-          </div>
-          <span className="text-sm font-medium text-muted-foreground">
-            4.8 stars
-          </span>
+        <div className="mb-6 flex justify-center">
+          <img 
+            src="/transparentLogo.png" 
+            alt="Royalty Mobile Detailing Logo" 
+            className="h-48 md:h-64 lg:h-80 w-auto max-w-[800px] object-contain"
+          />
         </div>
       </AnimatedContent>
 
