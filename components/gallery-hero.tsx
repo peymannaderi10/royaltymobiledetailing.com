@@ -51,11 +51,11 @@ export function GalleryHero() {
   ]
 
   return (
-    <section className="relative pt-36 bg-white">
+    <section className="relative pt-20 md:pt-36 bg-white">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid gap-12 grid-cols-1 lg:grid-cols-2 items-start">
           {/* Left side - Content */}
-          <div className="text-center lg:text-left pt-36">
+          <div className="text-center lg:text-left pt-20 md:pt-36">
             <h1 className="text-4xl md:text-6xl font-bold text-primary mb-6 font-[family-name:var(--font-heading)]">
               Our Work Gallery
             </h1>

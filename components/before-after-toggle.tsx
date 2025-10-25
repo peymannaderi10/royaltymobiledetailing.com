@@ -60,7 +60,7 @@ export default function BeforeAfterToggle() {
   };
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-12 md:py-20 bg-white">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-primary mb-4 font-[family-name:var(--font-heading)]">
@@ -110,8 +110,10 @@ export default function BeforeAfterToggle() {
                         src={currentImage}
                         alt={`${item.title} - ${currentView}`}
                         fill
-                        className="object-cover object-center transition-opacity duration-300"
+                        className="object-cover object-center"
                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                        quality={85}
+                        priority={item.id <= 3} // Prioritize first 3 images
                       />
                     </div>
                   </div>
