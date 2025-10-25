@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Calendar, Clock, User } from "lucide-react"
+import Link from "next/link"
 
 export interface BlogGridProps {
   filterCategories?: string[]
@@ -19,7 +20,8 @@ export function BlogGrid({ filterCategories = [] }: BlogGridProps) {
       author: "Royalty Team",
       date: "March 15, 2024",
       readTime: "6 min read",
-      image: "/placeholder.svg?height=200&width=400&text=Mobile+Detailing+Guide",
+      image: "/luxury-custom-car-interior-after-professional-work.png",
+      slug: "complete-guide-mobile-detailing",
       featured: true,
     },
     {
@@ -29,7 +31,8 @@ export function BlogGrid({ filterCategories = [] }: BlogGridProps) {
       author: "Royalty Team",
       date: "March 10, 2024",
       readTime: "5 min read",
-      image: "/placeholder.svg?height=200&width=400&text=Detailing+Signs",
+      image: "/before1-honda.png",
+      slug: "5-signs-car-needs-professional-detailing",
     },
     {
       title: "Interior Detailing: From Basic to Showroom Ready",
@@ -39,7 +42,8 @@ export function BlogGrid({ filterCategories = [] }: BlogGridProps) {
       author: "Royalty Team",
       date: "March 5, 2024",
       readTime: "7 min read",
-      image: "/placeholder.svg?height=200&width=400&text=Interior+Detailing",
+      image: "/luxury-car-interior-restoration-leather-seats-dash.png",
+      slug: "interior-detailing-basic-to-showroom",
     },
     {
       title: "DIY Interior Cleaning Tips for Leather Seats",
@@ -49,7 +53,8 @@ export function BlogGrid({ filterCategories = [] }: BlogGridProps) {
       author: "Royalty Team",
       date: "February 28, 2024",
       readTime: "4 min read",
-      image: "/placeholder.svg?height=200&width=400&text=Leather+Care",
+      image: "/restored-mercedes-car-seat-like-new-condition.png",
+      slug: "diy-leather-seat-cleaning-tips",
     },
     {
       title: "Exterior Detailing: Paint Correction and Protection",
@@ -58,7 +63,8 @@ export function BlogGrid({ filterCategories = [] }: BlogGridProps) {
       author: "Royalty Team",
       date: "February 20, 2024",
       readTime: "6 min read",
-      image: "/placeholder.svg?height=200&width=400&text=Paint+Correction",
+      image: "/bmw-convertible-with-new-black-canvas-top.png",
+      slug: "exterior-detailing-paint-correction",
     },
     {
       title: "Seasonal Car Care: Preparing Your Vehicle for Winter",
@@ -68,7 +74,8 @@ export function BlogGrid({ filterCategories = [] }: BlogGridProps) {
       author: "Royalty Team",
       date: "February 15, 2024",
       readTime: "5 min read",
-      image: "/placeholder.svg?height=200&width=400&text=Winter+Care",
+      image: "/automotive-maintenance-oil-change-brake-service-pr.png",
+      slug: "seasonal-car-care-winter-preparation",
     },
     {
       title: "Ceramic Coating vs Wax: What's the Difference?",
@@ -77,7 +84,8 @@ export function BlogGrid({ filterCategories = [] }: BlogGridProps) {
       author: "Royalty Team",
       date: "February 10, 2024",
       readTime: "6 min read",
-      image: "/placeholder.svg?height=200&width=400&text=Ceramic+Coating",
+      image: "/porsche-dashboard-restoration-leather-repair.png",
+      slug: "ceramic-coating-vs-wax-difference",
     },
     {
       title: "How Often Should You Get Your Car Detailed?",
@@ -87,7 +95,8 @@ export function BlogGrid({ filterCategories = [] }: BlogGridProps) {
       author: "Royalty Team",
       date: "February 5, 2024",
       readTime: "5 min read",
-      image: "/placeholder.svg?height=200&width=400&text=Detailing+Frequency",
+      image: "/clean-dry-car-interior-after-sunroof-repair.png",
+      slug: "how-often-car-detailing-frequency",
     },
     {
       title: "The Benefits of Professional Mobile Detailing",
@@ -97,7 +106,8 @@ export function BlogGrid({ filterCategories = [] }: BlogGridProps) {
       author: "Royalty Team",
       date: "January 30, 2024",
       readTime: "4 min read",
-      image: "/placeholder.svg?height=200&width=400&text=Mobile+Benefits",
+      image: "/luxury-car-interior-with-custom-leather-seats.png",
+      slug: "benefits-professional-mobile-detailing",
     },
   ]
 
@@ -117,9 +127,10 @@ export function BlogGrid({ filterCategories = [] }: BlogGridProps) {
             <h2 className="text-2xl font-bold text-primary mb-8 font-[family-name:var(--font-heading)]">
               Featured Article
             </h2>
-            <Card className="overflow-hidden border-border/50 hover:shadow-lg transition-all duration-300">
+            <Link href={`/blog/${featuredArticle.slug}`}>
+              <Card className="overflow-hidden border-border/50 hover:shadow-lg transition-all duration-300 p-0 cursor-pointer">
               <div className="grid md:grid-cols-2 gap-0">
-                <div className="aspect-[16/10] md:aspect-auto">
+                <div className="h-80 md:h-96">
                   <img
                     src={featuredArticle.image || "/placeholder.svg"}
                     alt={featuredArticle.title}
@@ -149,6 +160,7 @@ export function BlogGrid({ filterCategories = [] }: BlogGridProps) {
                 </CardContent>
               </div>
             </Card>
+            </Link>
           </div>
         )}
 
@@ -159,11 +171,9 @@ export function BlogGrid({ filterCategories = [] }: BlogGridProps) {
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {regularArticles.map((article, index) => (
-              <Card
-                key={index}
-                className="group overflow-hidden border-border/50 hover:shadow-lg transition-all duration-300"
-              >
-                <div className="aspect-[16/10] overflow-hidden">
+              <Link key={index} href={`/blog/${article.slug}`}>
+                <Card className="group overflow-hidden border-border/50 hover:shadow-lg transition-all duration-300 p-0 cursor-pointer">
+                <div className="h-64 overflow-hidden">
                   <img
                     src={article.image || "/placeholder.svg"}
                     alt={article.title}
@@ -190,6 +200,7 @@ export function BlogGrid({ filterCategories = [] }: BlogGridProps) {
                   </div>
                 </CardContent>
               </Card>
+              </Link>
             ))}
           </div>
         </div>

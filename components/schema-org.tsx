@@ -1,3 +1,59 @@
+interface BlogPostSchemaProps {
+  title: string
+  description: string
+  url: string
+  image: string
+  publishedTime: string
+  author: string
+  category: string
+}
+
+export function BlogPostSchema({ title, description, url, image, publishedTime, author, category }: BlogPostSchemaProps) {
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": title,
+    "description": description,
+    "image": image,
+    "datePublished": publishedTime,
+    "dateModified": publishedTime,
+    "author": {
+      "@type": "Organization",
+      "name": author,
+      "url": "https://royaltymobiledetailing.com"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Royalty Mobile Detailing",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://royaltymobiledetailing.com/Steve'sLogo.png"
+      }
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": url
+    },
+    "articleSection": category,
+    "keywords": [
+      "mobile detailing",
+      "car detailing",
+      category.toLowerCase(),
+      "Philadelphia",
+      "auto care"
+    ]
+  }
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{
+        __html: JSON.stringify(articleSchema),
+      }}
+    />
+  )
+}
+
 export function SchemaOrg() {
   const businessSchema = {
     "@context": "https://schema.org",

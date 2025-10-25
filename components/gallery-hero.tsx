@@ -2,30 +2,51 @@
 
 import { Button } from "@/components/ui/button"
 import { Phone, Calendar } from "lucide-react"
-import BeforeAfterCarousel, { BeforeAfterItem } from "@/components/before-after-carousel"
+import AutoRotatingCarousel, { CarouselItem } from "@/components/auto-rotating-carousel"
 
 export function GalleryHero() {
-  const beforeAfterProjects: BeforeAfterItem[] = [
+  const carouselProjects: CarouselItem[] = [
     {
       id: 1,
-      title: "Convertible Top Restoration",
-      description: "Complete replacement of worn canvas top with new hydraulic system repair",
-      before: "/worn-damaged-convertible-top-before-repair.png",
-      after: "/bmw-convertible-with-new-black-canvas-top.png",
+      title: "Honda Interior Restoration",
+      description: "Complete Honda interior deep cleaning and restoration services",
+      before: "/before1-honda.png",
+      after: "/after1-honda.png",
     },
     {
       id: 2,
-      title: "Sunroof Leak Repair",
-      description: "Fixed persistent water leak and replaced damaged weatherstripping",
-      before: "/sunroof-water-damage-leak-before-repair.png",
-      after: "/mercedes-sunroof-repair-before-and-after.png",
+      title: "Honda Second Project",
+      description: "Comprehensive Honda detailing and protection treatment",
+      before: "/before2-honda.png",
+      after: "/after2-honda.png",
     },
     {
       id: 3,
-      title: "Interior Seat Restoration",
-      description: "Torn leather seats restored with premium materials and custom stitching",
-      before: "/torn-damaged-car-seats-before-restoration.png",
-      after: "/luxury-car-interior-with-custom-leather-seats.png",
+      title: "Subaru Interior Work",
+      description: "Subaru interior deep cleaning and restoration",
+      before: "/before1-subaru.png",
+      after: "/after1-subaru.png",
+    },
+    {
+      id: 4,
+      title: "Van Interior Restoration",
+      description: "Commercial van interior detailing and cleaning",
+      before: "/before1-van.png",
+      after: "/after1-van.png",
+    },
+    {
+      id: 5,
+      title: "Van Second Project",
+      description: "Professional van interior restoration services",
+      before: "/before2-van.png",
+      after: "/after2-van.png",
+    },
+    {
+      id: 6,
+      title: "Audi Interior Work",
+      description: "Professional Audi detailing and restoration work",
+      before: "/before2-audi.png",
+      after: "/after2-audi.png",
     },
   ]
 
@@ -60,21 +81,15 @@ export function GalleryHero() {
             </div>
           </div>
 
-          {/* Right side - Before/After Carousel */}
+          {/* Right side - Auto Rotating Carousel */}
           <div className="relative pt-16">
-            <div className="text-center mb-6">
-              <h2 className="text-2xl font-bold text-primary mb-2">Before & After</h2>
-              <p className="text-muted-foreground">See the dramatic transformations</p>
-            </div>
-            <div className="relative rounded-lg overflow-hidden">
-              <BeforeAfterCarousel 
-                items={beforeAfterProjects}
-                baseWidth={600}
-                autoplay={true}
-                autoplayDelay={3000}
-                loop={true}
-              />
-            </div>
+            <AutoRotatingCarousel 
+              items={carouselProjects}
+              autoplayDelay={4000}
+              showControls={false}
+              showIndicators={false}
+              showTitle={true}
+            />
           </div>
         </div>
       </div>

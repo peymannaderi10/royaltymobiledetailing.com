@@ -13,39 +13,39 @@ interface BeforeAfterItem {
 const beforeAfterItems: BeforeAfterItem[] = [
   {
     id: 1,
-    before: "/worn-damaged-convertible-top-before-repair.png",
-    after: "/bmw-convertible-with-new-black-canvas-top.png",
-    title: "Convertible Top Restoration"
+    before: "/before1-honda.png",
+    after: "/after1-honda.png",
+    title: "Honda Interior Work"
   },
   {
     id: 2,
-    before: "/sunroof-water-damage-leak-before-repair.png",
-    after: "/mercedes-sunroof-repair-before-and-after.png",
-    title: "Sunroof Leak Repair"
+    before: "/before2-honda.png",
+    after: "/after2-honda.png",
+    title: "Honda Second Project"
   },
   {
     id: 3,
-    before: "/torn-damaged-car-seats-before-restoration.png",
-    after: "/luxury-car-interior-with-custom-leather-seats.png",
-    title: "Interior Seat Restoration"
+    before: "/before1-subaru.png",
+    after: "/after1-subaru.png",
+    title: "Subaru Interior Restoration"
   },
   {
     id: 4,
-    before: "/water-damaged-car-interior-from-sunroof-leak.png",
-    after: "/clean-dry-car-interior-after-sunroof-repair.png",
-    title: "Water Damage Restoration"
+    before: "/before1-van.png",
+    after: "/after1-van.png",
+    title: "Van Interior Work"
   },
   {
     id: 5,
-    before: "/worn-torn-mercedes-car-seat-before-restoration.png",
-    after: "/restored-mercedes-car-seat-like-new-condition.png",
-    title: "Mercedes Seat Restoration"
+    before: "/before2-van.png",
+    after: "/after2-van.png",
+    title: "Van Second Project"
   },
   {
     id: 6,
-    before: "/basic-car-interior-before-custom-upgrade.png",
-    after: "/luxury-custom-car-interior-after-professional-work.png",
-    title: "Interior Custom Upgrade"
+    before: "/before2-audi.png",
+    after: "/after2-audi.png",
+    title: "Audi Second Project"
   }
 ];
 

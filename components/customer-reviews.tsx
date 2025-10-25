@@ -36,8 +36,6 @@ export function CustomerReviews() {
                 <Star key={i} className="w-5 h-5 fill-accent text-accent" />
               ))}
             </div>
-            <span className="text-lg font-semibold text-primary">4.8 out of 5</span>
-            <span className="text-muted-foreground">• 148 reviews</span>
           </div>
         </div>
 

@@ -2,28 +2,40 @@ import { Card } from "@/components/ui/card"
 
 const galleryItems = [
   {
-    title: "Convertible Top Replacement",
-    before: "/worn-damaged-convertible-top-before-repair.png",
-    after: "/new-convertible-top-after-professional-replacement.png",
-    description: "Complete convertible top replacement with OEM materials",
+    title: "Honda Interior Work",
+    before: "/before1-honda.png",
+    after: "/after1-honda.png",
+    description: "Honda interior cleaning and restoration services",
   },
   {
-    title: "Sunroof Leak Repair",
-    before: "/water-damaged-car-interior-from-sunroof-leak.png",
-    after: "/clean-dry-car-interior-after-sunroof-repair.png",
-    description: "Complex sunroof leak diagnosis and permanent repair",
+    title: "Honda Second Project",
+    before: "/before2-honda.png",
+    after: "/after2-honda.png",
+    description: "Comprehensive Honda detailing and protection",
   },
   {
-    title: "Mercedes Seat Restoration",
-    before: "/worn-torn-mercedes-car-seat-before-restoration.png",
-    after: "/restored-mercedes-car-seat-like-new-condition.png",
-    description: "Professional leather seat restoration to factory condition",
+    title: "Subaru Interior Restoration",
+    before: "/before1-subaru.png",
+    after: "/after1-subaru.png",
+    description: "Subaru interior deep cleaning and restoration",
   },
   {
-    title: "Custom Interior Work",
-    before: "/basic-car-interior-before-custom-upgrade.png",
-    after: "/luxury-custom-car-interior-after-professional-work.png",
-    description: "Custom interior design and installation",
+    title: "Van Interior Work",
+    before: "/before1-van.png",
+    after: "/after1-van.png",
+    description: "Commercial van interior detailing and cleaning",
+  },
+  {
+    title: "Van Second Project",
+    before: "/before2-van.png",
+    after: "/after2-van.png",
+    description: "Professional van interior restoration services",
+  },
+  {
+    title: "Audi Second Project",
+    before: "/before2-audi.png",
+    after: "/after2-audi.png",
+    description: "Professional Audi detailing and restoration work",
   },
 ]
 

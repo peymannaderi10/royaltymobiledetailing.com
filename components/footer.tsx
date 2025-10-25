@@ -20,7 +20,7 @@ export function Footer() {
                   <Star key={i} className="w-4 h-4 fill-accent text-accent" />
                 ))}
               </div>
-              <span className="text-sm font-[family-name:var(--font-body)]">4.8 stars • 148 reviews</span>
+              <span className="text-sm font-[family-name:var(--font-body)]">4.8 stars</span>
             </div>
           </div>
 

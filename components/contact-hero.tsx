@@ -11,7 +11,7 @@ export function ContactHero() {
               <Star key={i} className="w-5 h-5 fill-accent text-accent" />
             ))}
           </div>
-          <span className="text-sm font-medium text-muted-foreground">4.8 stars • 148 reviews</span>
+          <span className="text-sm font-medium text-muted-foreground">4.8 stars</span>
         </div>
 
         <h1 className="text-4xl md:text-6xl font-bold text-primary mb-6 font-[family-name:var(--font-heading)]">

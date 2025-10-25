@@ -15,7 +15,7 @@ export default function HeroSection() {
           alt="Professional auto interior work"
           className="w-full h-full object-cover opacity-80"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-background/80 to-background/60" />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/45 to-white" />
       </div>
 
       {/* Content */}
@@ -38,7 +38,7 @@ export default function HeroSection() {
             ))}
           </div>
           <span className="text-sm font-medium text-muted-foreground">
-            4.8 stars • 148 reviews
+            4.8 stars
           </span>
         </div>
       </AnimatedContent>
