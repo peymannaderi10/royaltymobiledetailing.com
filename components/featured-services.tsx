@@ -14,6 +14,8 @@ const services = [
     features: ["Power wash & dry", "Tire & wheel cleaning", "Interior vacuum", "Window cleaning"],
     price: "$160-$200",
     duration: "2.5-3 hours",
+    popular: true,
+    squareAppointmentLink: "https://book.squareup.com/appointments/z8kedt6rlit7op/location/LWT57WDV6AKE0/services/IUA7SUMZCIRG6UH2I33VCOQJ"
   },
   {
     icon: Sparkles,
@@ -22,6 +24,7 @@ const services = [
     features: ["Complete inside & out detail", "Engine bay detail", "Buffing & polishing"],
     price: "$350-$400",
     duration: "4-4.5 hours",
+    squareAppointmentLink: "https://book.squareup.com/appointments/z8kedt6rlit7op/location/LWT57WDV6AKE0/services/EHELKZWUS5EJDMVQWVK6MOG2"
   },
   {
     icon: Zap,
@@ -30,6 +33,7 @@ const services = [
     features: ["Power wash & dry", "Tire & wheel cleaning", "Interior vacuum", "Trunk vacuum"],
     price: "$100-$150",
     duration: "1.5-2 hours",
+    squareAppointmentLink: "https://book.squareup.com/appointments/z8kedt6rlit7op/location/LWT57WDV6AKE0/services/IYGKUQLV6BB264CUZOILHIHE"
   },
 ];
 
@@ -77,7 +81,14 @@ export default function FeaturedServices() {
               threshold={0.3}
               delay={index * 0.15}
             >
-              <Card className="group hover:shadow-lg transition-all duration-300 border-border/50 h-full flex flex-col">
+              <Card className={`group hover:shadow-lg transition-all duration-300 border-border/50 h-full flex flex-col relative ${service.popular ? 'ring-2 ring-accent' : ''}`}>
+                {service.popular && (
+                  <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
+                    <span className="bg-accent text-accent-foreground px-4 py-1 rounded-full text-sm font-semibold">
+                      Most Popular
+                    </span>
+                  </div>
+                )}
                 <CardHeader className="text-center pb-4">
                   <div className="w-16 h-16 mx-auto mb-4 bg-accent/10 rounded-full flex items-center justify-center group-hover:bg-accent/20 transition-colors">
                     <Icon className="w-8 h-8 text-accent" />
@@ -100,6 +111,14 @@ export default function FeaturedServices() {
                       </li>
                     ))}
                   </ul>
+
+                  <div className="border-t border-border pt-4 mt-auto">
+                    <a href={service.squareAppointmentLink} target="_blank" rel="noopener noreferrer">
+                      <Button className="w-full bg-accent hover:bg-accent/90 text-accent-foreground">
+                        Book Now
+                      </Button>
+                    </a>
+                  </div>
                 </CardContent>
               </Card>
             </AnimatedContent>
