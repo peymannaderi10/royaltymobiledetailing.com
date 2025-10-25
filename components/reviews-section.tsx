@@ -26,15 +26,11 @@ export function ReviewsSection() {
     <section className="py-16 bg-white">
       {/* Google Reviews Widget */}
       <div className="mb-16">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="text-center mb-8">
-            <h2 className="text-3xl font-bold text-primary mb-4">What Our Customers Say</h2>
-            <p className="text-lg text-muted-foreground">Real reviews from real customers who trust us with their vehicles</p>
-          </div>
-          <div className="bg-white rounded-lg shadow-lg p-6">
-            <div className='sk-ww-google-reviews' data-embed-id='25614441'></div>
-          </div>
+        <div className="text-center mb-8 px-6">
+          <h2 className="text-3xl font-bold text-primary mb-4">What Our Customers Say</h2>
+          <p className="text-lg text-muted-foreground">Real reviews from real customers who trust us with their vehicles</p>
         </div>
+        <div className='sk-ww-google-reviews' data-embed-id='25614441'></div>
       </div>
 
       {/* Call to Action - Bottom Center */}
