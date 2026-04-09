@@ -5,10 +5,10 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { CheckCircle, Crown, Plane, Ship, Caravan, ShieldCheck, Sparkles } from "lucide-react";
+import { CheckCircle, Crown, Plane, Ship, Caravan, ShieldCheck, Sparkles, Phone } from "lucide-react";
 import AnimatedContent from "./AnimatedContent";
 
-const BOOKING_URL = "https://book.squareup.com/appointments/z8kedt6rlit7op/location/LWT57WDV6AKE0/services";
+const QUOTE_PHONE = "+12675041533";
 
 type Item = { name: string; price: string };
 type Pkg = { name: string; price: string; features: string[]; popular?: boolean };
@@ -227,10 +227,13 @@ const subscriptions: Pkg[] = [
   },
 ];
 
-function BookButton({ className = "", children = "Book Now" }: { className?: string; children?: React.ReactNode }) {
+function BookButton({ className = "", children = "Get Custom Quote" }: { className?: string; children?: React.ReactNode }) {
   return (
-    <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer" className={className}>
-      <Button className="w-full bg-accent hover:bg-accent/90 text-accent-foreground">{children}</Button>
+    <a href={`tel:${QUOTE_PHONE}`} className={className}>
+      <Button className="w-full bg-accent hover:bg-accent/90 text-accent-foreground">
+        <Phone className="w-4 h-4 mr-2" />
+        {children}
+      </Button>
     </a>
   );
 }
@@ -376,7 +379,7 @@ export default function PremiumServices() {
                   </Card>
                 </div>
                 <div className="max-w-xs mx-auto mt-8">
-                  <BookButton>Book {cat.label}</BookButton>
+                  <BookButton>Get Custom Quote</BookButton>
                 </div>
               </div>
             </TabsContent>
